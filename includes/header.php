@@ -37,15 +37,15 @@
                     <li style="text-align:center;"><b>Submersible Wires</b></li>
                     <li><a href="products.php#vagaleSub">Vagale Submersible Copper Wire</a></li>
                     <li><a href="products.php#balajiWindingWire">Balaji Submersible Winding Wire</a></li>
-                    <li><a href="products.php">R R Shramik Submersible Winding Wire</a></li>
+                    <li><a href="products.php#rrsharmik">R R Shramik Submersible Winding Wire</a></li>
                   </ul>
                 </li>
                 <li class="drop-down"><a href="products.php">Copper Winding Wire</a>
                   <ul>
                     <li style="text-align:center;"><b>Copper Winding Wires</b></li>
-                    <li><a href="products.php">R R Shamik Enameled Copper Wire</a></li>
-                    <li><a href="products.php">Laurel Copper Wire</a></li>
-                    <li><a href="products.php">Swastik Super Enmeled Copper Wire</a></li>
+                    <li><a href="products.php#rrenameled">R R Shamik Enameled Copper Wire</a></li>
+                    <li><a href="products.php#laurelcopper">Laurel Copper Wire</a></li>
+                    <li><a href="products.php#swastiksuper">Swastik Super Enmeled Copper Wire</a></li>
                   </ul>
                 </li>
               </ul>
@@ -55,42 +55,38 @@
                 <li class="drop-down"><a href="products.php">Power Cable</a>
                   <ul>
                     <li style="text-align:center;"><b>Power Cables</b></li>
-                    <li><a href="products.php">Submersible Windin Wire</a></li>
-                    <li><a href="products.php">R R Flat Cable</a></li>
+                    <li><a href="products.php#rrenameled">Submersible Windin Wire</a></li>
+                    <li><a href="products.php#rrfla">R R Flat Cable</a></li>
+                    <li><a href="products.php#rrcab">R R Cable</a></li>
                   </ul>
                 </li>
-                <li><a href="products.php">Submersible Pump Cable</a></li>
-                <li><a href="products.php">Submersible Flat Cable</a></li>
+                <li><a href="products.php#subpumpcable">Submersible Pump Cable</a></li>
+                <li><a href="products.php#subflatcable">Submersible Flat Cable</a></li>
               </ul>
             </li>
-            <li class="drop-down"><a href="products.php">Varnish</a>
+            <li class="drop-down"><a href="products.php#rrenameled">Varnish</a>
               <ul>
-                <li><a href="products.php">Dr. Varnish</a></li>
-                <li><a href="products.php">Dr. Beck Varnish</a></li>
-                <li><a href="products.php">Jyoti Varnish</a></li>
+                <li><a href="products.php#drvar">Dr. Varnish</a></li>
+                <li><a href="products.php#drbeckvar">Dr. Beck Varnish</a></li>
+                <li><a href="products.php#jyotivar">Jyoti Varnish</a></li>
               </ul>
             </li>
-            <li class="drop-down"><a href="products.php">Ball Bearing</a>
+            <li class="drop-down"><a href="products.php#rrenameled">Ball Bearing</a>
               <ul>
-                <li><a href="products.php">SKF Bearing</a></li>
-                <li><a href="products.php">SKF Ball Bearing</a></li>
+                <li><a href="products.php#skfbear">SKF Bearing</a></li>
+                <li><a href="products.php#skfbbear">SKF Ball Bearing</a></li>
               </ul>
             </li>
-            <li class="drop-down"><a href="products.php">SKF Grease</a>
+            <li class="drop-down"><a href="products.php#rrenameled">SKF Grease</a>
               <ul>
-                <li><a href="products.php">SKF Grease</a></li>
-                <li><a href="products.php">SKF Ball Grease</a></li>
-                <li><a href="products.php">SKF Bearing</a></li>
+                <li><a href="products.php#skftu">SKF Grease Tube</a></li>
+                <li><a href="products.php#skfgre">SKF Grease</a></li>
+                <li><a href="products.php#skfbeargre">SKF Bearing Grease</a></li>
               </ul>
             </li>
-            <li class="drop-down"><a href="products.php">Submersible Paper</a>
-              <ul>
-                <li><a href="products.php">R R Cable</a></li>
-                <li><a href="products.php">Garware Polyster Paper</a></li>
-              </ul>
-            </li>
-            <li><a href="products.php">Omega Rubber Tape</a></li>
-            <li><a href="products.php">Fiber Glass Sleeves</a></li>
+            <li><a href="products.php#polypaper">Garware Polyster Paper</a> </li>
+            <li><a href="products.php#ortube">Omega Rubber Tape</a></li>
+            <li><a href="products.php#fibesleeves">Fiber Glass Sleeves</a></li>
           </ul>
         </li>
         <li><a href="#contact">Contact</a>

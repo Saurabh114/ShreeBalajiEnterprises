@@ -70,6 +70,7 @@
            <div class="row" data-aos="fade-up" data-aos-delay="100">
              <div class="col-lg-12 d-flex justify-content-center">
                <ul id="portfolio-flters">
+                 <h4>
                  <li data-filter="*" class="filter-active">All</li>
                  <li data-filter=".filter-wire">Wires</li>
                  <li data-filter=".filter-copperwire">Copper Wires</li>
@@ -80,14 +81,15 @@
                  <li data-filter=".filter-paper">Submersible Paper</li>
                  <li data-filter=".filter-tube">Omega Rubber Tube</li>
                  <li data-filter=".filter-sleeves">Fiber Glass Sleeves</li>
+               </h4>
                </ul>
              </div>
            </div>
 
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div id="vagalesub" class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div id="vagaleSub" class="col-lg-4 col-md-6 portfolio-item filter-wire">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-wire">
             <div class="portfolio-info">
               <img src="assets/images/34.jpg" class="img-fluid" alt="">
               <h4>Vagale Submersible Copper Wire</h4>
@@ -121,7 +123,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-varnish">
+          <div id="drvar" class="col-lg-4 col-md-6 portfolio-item filter-varnish">
             <div class="portfolio-info">
             <img src="assets/images/7.jpg" class="img-fluid" alt="">
               <h4>DR. Varnish</h4>
@@ -132,7 +134,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bearing">
+          <div id="skfbear" class="col-lg-4 col-md-6 portfolio-item filter-bearing">
             <div class="portfolio-info">
             <img src="assets/images/42.jpg" class="img-fluid" alt="">
               <h4>SKF Bearing</h4>
@@ -143,7 +145,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-grease">
+          <div id="skftu" class="col-lg-4 col-md-6 portfolio-item filter-grease">
               <div class="portfolio-info">
             <img src="assets/images/41.jpg" class="img-fluid" alt="">
               <h4>SKF Grease Tube</h4>
@@ -154,7 +156,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-paper">
+          <div id="polypaper" class="col-lg-4 col-md-6 portfolio-item filter-paper">
             <div class="portfolio-info">
             <img src="assets/images/49.jpg" class="img-fluid" alt="">
               <h4>Garware polyster paper</h4>
@@ -165,7 +167,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-tube">
+          <div id="ortube"class="col-lg-4 col-md-6 portfolio-item filter-tube">
             <div class="portfolio-info">
             <img src="assets/images/32.jpg" class="img-fluid" alt="">
               <h4>Omega Rubber tape</h4>
@@ -176,7 +178,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-sleeves">
+          <div id="fibesleeves" class="col-lg-4 col-md-6 portfolio-item filter-sleeves">
             <div class="portfolio-info">
             <img src="assets/images/9.jpg" class="img-fluid" alt="">
               <h4>Fiber Sleeves</h4>
@@ -187,7 +189,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div id="rrcab" class="col-lg-4 col-md-6 portfolio-item filter-cable">
             <div class="portfolio-info">
             <img src="assets/images/17.jpg" class="img-fluid" alt="">
               <h4>R R Cable</h4>
@@ -199,13 +201,13 @@
           </div>
 
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wire">
-            <div id="balajiWindingWire" class="portfolio-info">
+          <div id="balajiWindingWire" class="col-lg-4 col-md-6 portfolio-item filter-wire">
+            <div  class="portfolio-info">
             <img src="assets/images/53.jpg" class="img-fluid mySlides" alt="">
             <img src="assets/images/5.jpg"  class="img-fluid mySlides" alt="">
               <h4>Balaji Submersible Winding Wire</h4>
-
-              <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#balajiWinding">  <p>Approx. Price: Rs 490 / Kilogram</p>
+              <p>Approx. Price: Rs 490 / Kilogram</p>
+              <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#balajiWinding">
                 <p style="color: #0e49b5;">Click to know More </p>
               </a>
             </div>
@@ -222,7 +224,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-varnish">
+          <div id="drbeckvar" class="col-lg-4 col-md-6 portfolio-item filter-varnish">
             <div class="portfolio-info">
             <img src="assets/images/8.jpg" class="img-fluid" alt="">
               <h4>Dr Beck Varnish</h4>
@@ -233,7 +235,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
+          <div id="capitalsub" class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
             <div class="portfolio-info">
             <img src="assets/images/54.jpg" class="img-fluid" alt="">
               <h4>Capital Submersible Wire</h4>
@@ -244,7 +246,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wire">
+          <div id="rrsharmik" class="col-lg-4 col-md-6 portfolio-item filter-wire">
             <div class="portfolio-info">
             <img src="assets/images/22.jpg" class="img-fluid" alt="">
               <h4>R R Shramik Submersible Winding Wire</h4>
@@ -255,7 +257,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-grease">
+          <div id="skfgre" class="col-lg-4 col-md-6 portfolio-item filter-grease">
             <div class="portfolio-info">
             <img src="assets/images/40.jpg" class="img-fluid" alt="">
               <h4>SKF Grease</h4>
@@ -266,7 +268,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div id="rrfla" class="col-lg-4 col-md-6 portfolio-item filter-cable">
             <div class="portfolio-info">
             <img src="assets/images/18.jpg" class="img-fluid" alt="">
               <h4>R R Flat cable</h4>
@@ -277,7 +279,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-bearing">
+          <div id="skfbbear" class="col-lg-4 col-md-6 portfolio-item filter-bearing">
             <div class="portfolio-info">
             <img src="assets/images/20.jpg" class="img-fluid" alt="">
               <h4>SKF Ball Bearing</h4>
@@ -299,7 +301,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wire">
+          <div id="polyca" class="col-lg-4 col-md-6 portfolio-item filter-wire">
             <div class="portfolio-info">
             <img src="assets/images/11.jpg" class="img-fluid" alt="">
               <h4>Polycab Submersible Winding Wire</h4>
@@ -310,7 +312,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div id="subpumpcable" class="col-lg-4 col-md-6 portfolio-item filter-cable">
             <div class="portfolio-info">
             <img src="assets/images/21.jpg" class="img-fluid" alt="">
               <h4>Submersible Pump Cable</h4>
@@ -321,7 +323,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-grease">
+          <div id="skfbeargre" class="col-lg-4 col-md-6 portfolio-item filter-grease">
             <div class="portfolio-info">
             <img src="assets/images/39.jpg" class="img-fluid" alt="">
               <h4>SKF Bearing Grease</h4>
@@ -332,7 +334,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-varnish">
+          <div id="jyotivar" class="col-lg-4 col-md-6 portfolio-item filter-varnish">
             <div class="portfolio-info">
             <img src="assets/images/24.jpg" class="img-fluid" alt="">
               <h4>Jyoti varnish</h4>
@@ -365,7 +367,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div id="subflatcable" class="col-lg-4 col-md-6 portfolio-item filter-cable">
             <div class="portfolio-info">
             <img src="assets/images/48.jpg" class="img-fluid" alt="">
               <h4>Submersible Flat Cable</h4>
