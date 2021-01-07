@@ -1,0 +1,121 @@
+
+
+#carousel {
+  font-family: sans-serif;
+  margin: 0;
+  padding-bottom: 0;
+  width: 100%;
+  height:700px;
+  background: #f6f9fe;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#carousel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#carousel img{
+  max-width: 250px;
+  height: 200px;
+  display: block;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+#carousel .line h6{
+  text-align: center;
+}
+
+#carousel .carousel-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  text-align: center;
+}
+#carousel .carousel-wrapper h3{
+margin: 15px 0 0 0;
+font-size: 32px;
+font-weight: 700;
+}
+
+#carousel .carousel-wrapper h3 span {
+  color: #106eea;
+}
+#carousel .carousel-wrapper .carousel{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#carousel .carousel-wrapper .carousel .carousel-cell{
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  width:auto;
+  height: auto;
+  min-width: 120px;
+  margin: 0 40px;
+  transition: transform 500ms ease;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.479);
+}
+
+.carousel-wrapper .carousel .carousel-cell .more{
+    display: block;
+    opacity: 0;
+    margin: 5px 0 15px 0;
+    text-align: center;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: opacity 300ms ease;
+}
+.carousel-wrapper .carousel .carousel-cell .more:hover,
+.carousel-wrapper .carousel .carousel-cell .more:active,
+.carousel-wrapper .carousel .carousel-cell .more:visited,
+.carousel-wrapper .carousel .carousel-cell .more:focus{
+    /* color: #cfcfcf; */
+    /* text-decoration: none; */
+}
+
+
+#carousel .carousel-wrapper .carousel .carousel-cell.is-selected{
+    transform: scale(1.2);
+}
+#carousel .carousel-wrapper .carousel .carousel-cell.is-selected .line{
+    height: 35px;
+}
+#carousel .carousel-wrapper .carousel .carousel-cell.is-selected .more{
+    opacity: 1;
+}
+#carousel .carousel-wrapper .flickity-page-dots{
+    display: none;
+}
+#carousel .carousel-wrapper .flickity-viewport,
+#carousel .carousel-wrapper .flickity-slider{
+    overflow: visible;
+}
+@media only screen and (max-width:760px){
+    #carousel .carousel-wrapper .carousel .carousel-cell{
+        width: auto;
+        height: auto;
+        padding: 5px;
+    }
+  #carousel  img{
+        width: 150px;
+        height: 150px;
+    }
+}
