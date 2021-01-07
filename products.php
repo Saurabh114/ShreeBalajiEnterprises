@@ -99,7 +99,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div id="subwinding" class="col-lg-4 col-md-6 portfolio-item filter-cable">
             <div class="portfolio-info">
             <img src="assets/images/23.jpg" class="img-fluid" alt="">
               <h4>Submersible Winding Wires</h4>
@@ -110,7 +110,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
+          <div id="rrenameled" class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
             <div class="portfolio-info">
             <img src="assets/images/19.jpg" class="img-fluid" alt="">
               <h4>RR Shramik Enameled Copper Wire</h4>
@@ -211,7 +211,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
+          <div id="laurelcopper" class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
             <div class="portfolio-info">
             <img src="assets/images/29.jpg" class="img-fluid" alt="">
               <h6>Laurel Copper Winding Wire</h6>
@@ -288,7 +288,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
+          <div id="swastiksuper" class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
             <div class="portfolio-info">
             <img src="assets/images/52.png" class="img-fluid" alt="">
               <h4>Swastik Super Enameled Cooper Wire</h4>

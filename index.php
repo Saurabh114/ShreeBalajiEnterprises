@@ -70,37 +70,37 @@
           <div class="carousel-cell active">
             <h6>Vagale Submersible Wire</h6>
             <img src="assets/images/34.jpg" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#vagaleSub" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell" data-aos="zoom-in" data-aos-delay="100">
             <h6>R R Shamik Enameled Copper Wire</h6>
             <img src="assets/images/19.jpg" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#rrenameled" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell"data-aos="zoom-in" data-aos-delay="100">
             <h6>Submersible Winding Wire</h6>
             <img src="assets/images/23.jpg" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#subwinding" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell"data-aos="zoom-in" data-aos-delay="100">
             <h6>Balaji Submersible Windiing Wire</h6>
             <img src="assets/images/1.jpg" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#balajiWindingWire" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell" data-aos="zoom-in" data-aos-delay="100">
             <h6>Laurel Copper Winding Wire</h6>
             <img src="assets/images/29.jpg" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#laurelcopper" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell" style="padding-bottom:0;" data-aos="zoom-in" data-aos-delay="100">
             <h6>R R Shamik Submersible Winding Wire</h6>
             <img src="assets/images/22.jpg" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#balajiWindingWire" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell" style="padding-bottom:0;"  data-aos="zoom-in" data-aos-delay="100">
             <h6>Swastik Super Enameled Copper Wire</h6>
             <img src="assets/images/52.png" alt="">
-            <span class="more"><button type="button" class="btn btn-outline-primary btn-sm">Explore More</button></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#swastiksuper" role="button">Explore More</a></span>
           </div>
         </div>
       </div>
