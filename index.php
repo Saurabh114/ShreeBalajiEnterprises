@@ -229,7 +229,7 @@
           <div class="col-lg-3 col-md-2" >
           </div>
           <div class="col-lg-3 col-md-2" style="padding-bottom:5px;">
-            <a class="btn btn-outline-primary" href="about.php" role="button">Know More</a>
+            <a class="btn btn-outline-primary" href="about.php#about-details" role="button">Know More</a>
           </div>
         </div>
       </div>
