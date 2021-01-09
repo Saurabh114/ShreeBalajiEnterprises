@@ -57,20 +57,18 @@
 
   <main id="main">
 
-    <section id="carousel" class="carousel-wrapper">
+    <section id="carousel" class="carousel">
+      <div class="section-title" style="padding-left: 90px;padding-right: 90px;">
+    <h3 style="padding-bottom:15px;">Our <span>Products</span></h3>
+    <h5 > <b>Shree Balaji Enterprises </b>is a dependable name in the market as wholesaler and trader of Automobile Products, established in 2012. </h5>
+      <hr>
+    </div>
       <div class="carousel-wrapper">
-          <div class="section-title" style="padding-left: 90px;padding-right: 90px;">
-        <h3 style="padding-bottom:15px;">Our <span>Products</span></h3>
-        <h5 >We are a customer centric & quality conscious organization endeavor to provide qualitative range of Dr Beck Varnish,
-          Fg Cable and Fiber Glass Cloth. Our products get immense appreciation from our clients owing to their quality,
-          fine finishing, scratch resistant and environment friendliness.</h5>
-          <hr>
-        </div>
         <div class="carousel" data-flickity='{ "autoPlay": true }' data-aos="zoom-in" data-aos-delay="100">
           <div class="carousel-cell active">
             <h6>Vagale Submersible Wire</h6>
             <img src="assets/images/34.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#vagaleSub" role="button">Explore More</a></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#vagalesub" role="button">Explore More</a></span>
           </div>
           <div class="carousel-cell" data-aos="zoom-in" data-aos-delay="100">
             <h6>R R Shamik Enameled Copper Wire</h6>
@@ -105,7 +103,6 @@
         </div>
       </div>
     </section>
-
 
 
     <!-- ======= Featured Services Section ======= -->

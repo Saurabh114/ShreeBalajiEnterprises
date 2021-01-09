@@ -94,6 +94,12 @@
             <li><a href="#">For Best Deals</a></li>
           </ul> -->
         </li>
+          <li>
+            <form id="search-container" action="#">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="bx bx-search"></i></button>
+            </form>
+          </li>
       </ul>
     </nav>
     <!-- .nav-menu -->
