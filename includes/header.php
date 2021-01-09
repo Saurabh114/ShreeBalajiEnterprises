@@ -2,14 +2,13 @@
 <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
   <div class="container d-flex">
     <div class="contact-info me-auto">
-      <i class="icofont-phone"></i> 08041947127
+      <a target="_blank" href="tel:+918041947127"><i class="fa fa-phone" ></i>  +91 8041947127</a>
     </div>
     <div class="social-links">
-      <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-      <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-      <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-      <a href="#" class="skype"><i class="icofont-skype"></i></a>
-      <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      <a target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','twitter','d0055'])" href="https://twitter.com/share?url=https://www.shreebalajienterprises.org/&amp;text=Shree Balaji Enterprises" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a  target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','facebook','d0055'])" href="https://www.facebook.com/sharer.php?u=https://www.shreebalajienterprises.org/"  class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a  target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','googleplus','d0055'])" href="https://plus.google.com/share?url=https://www.shreebalajienterprises.org/"  class="google-plus"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+      <a target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','linkedin','d0055'])" href="https://www.linkedin.com/cws/share?url=https://www.shreebalajienterprises.org/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
     </div>
   </div>
 </div>
@@ -18,7 +17,7 @@
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
 
-    <a href="index.html" class="logo me-auto"><img src="assets/images/shreeBalajiEnterprises.png" alt=""></a>
+    <a href="index.php" class="logo me-auto"><img src="assets/images/shreeBalajiEnterprises.png" alt=""></a>
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
@@ -28,11 +27,11 @@
             <li><a href="broucher.php?file=shree-balaji-enterprises" target="_blank">Download Broucher</a></li>
           </ul>
         </li>
-        <li class="drop-down"><a href="products.php">Our Products</a>
+        <li class="drop-down"><a href="products.php#portfolio">Our Products</a>
           <ul>
-            <li class="drop-down"><a href="products.php">Wire</a>
+            <li class="drop-down"><a href="products.php#wire" >Wire</a>
               <ul>
-                <li class="drop-down"><a href="products.php">Submersible Wire</a>
+                <li class="drop-down"><a href="products.php#wire">Submersible Wire</a>
                   <ul>
                     <li style="text-align:center;"><b>Submersible Wires</b></li>
                     <li><a href="products.php#vagaleSub">Vagale Submersible Copper Wire</a></li>
@@ -40,7 +39,7 @@
                     <li><a href="products.php#rrsharmik">R R Shramik Submersible Winding Wire</a></li>
                   </ul>
                 </li>
-                <li class="drop-down"><a href="products.php">Copper Winding Wire</a>
+                <li class="drop-down"><a href="products.php#cooper-wire">Copper Winding Wire</a>
                   <ul>
                     <li style="text-align:center;"><b>Copper Winding Wires</b></li>
                     <li><a href="products.php#rrenameled">R R Shamik Enameled Copper Wire</a></li>
@@ -50,7 +49,7 @@
                 </li>
               </ul>
             </li>
-            <li class="drop-down"><a href="products.php">Cables</a>
+            <li class="drop-down"><a href="products.php#cables">Cables</a>
               <ul>
                 <li class="drop-down"><a href="products.php">Power Cable</a>
                   <ul>

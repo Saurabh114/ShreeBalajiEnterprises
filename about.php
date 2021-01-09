@@ -17,6 +17,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -314,6 +315,78 @@
     </section>
     <!-- End Frequently Asked Questions Section -->
 
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h3><span>Ratings</span><span style="color: #40b4db"> & </span> Reviews</h3>
+        </div>
+        <hr>
+
+        <div class="row skills-content">
+          <div class="col-lg-2">
+
+          </div>
+          <div class="col-lg-4">
+            <div class="ratings">
+              <h4><b>Shree Balaji Enterprises</b></h4>
+              <h3><span >3.6<span style="font-size:18px;">/5</span></span></h3>
+              <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-o checked"></span>
+              <span class="fa fa-star-o checked"></span>
+              </div>
+              <h6>Rated By 26 Users</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="progress ">
+                <span  class="skill "><i  class="fa fa-star checked"></i> 5<i class="val">14</i></span>
+              <div class="progress-bar-wrap" style="background: #ebfff5;">
+                <div class="progress-bar" style="background-color: #258219;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span  class="skill "> <i  class="fa fa-star checked"></i> 4<i class="val">1</i></span>
+              <div class="progress-bar-wrap" style="background: #ebfff9;">
+                <div class="progress-bar" style="background-color: #4beb98;" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+                <span  class="skill "> <i  class="fa fa-star checked"></i> 3<i class="val">4</i></span>
+              <div class="progress-bar-wrap" style="background: #fffeeb;">
+                <div class="progress-bar" style="background-color: yellow;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+                <span  class="skill "> <i  class="fa fa-star checked"></i> 2<i class="val">0</i></span>
+              <div class="progress-bar-wrap" style="background: #fffbeb;">
+                <div class="progress-bar" style="background-color: orange;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+                <span  class="skill "> <i  class="fa fa-star checked"></i> 1<i class="val">7</i></span>
+              <div class="progress-bar-wrap" style="background: #ffebeb;">
+                <div class="progress-bar" style="background-color: #de1b1b;" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <!-- End Skills Section -->
 
     <!--============ Footer ===============-->
 

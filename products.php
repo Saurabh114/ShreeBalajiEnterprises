@@ -49,7 +49,7 @@
           Fg Cable and Fiber Glass Cloth. Our products get immense appreciation from our clients owing to their quality, fine finishing, scratch resistant and environment friendliness.
            </h2>
         <div class="d-flex">
-          <a href="#about" class="btn-get-started scrollto">All Products</a>
+          <a href="#portfolio" class="btn-get-started scrollto">All Products</a>
           </div>
       </div>
     </section><!-- End Hero -->
@@ -72,15 +72,15 @@
                <ul id="portfolio-flters">
                  <h4>
                  <li data-filter="*" class="filter-active">All</li>
-                 <li data-filter=".filter-wire">Wires</li>
-                 <li data-filter=".filter-copperwire">Copper Wires</li>
-                 <li data-filter=".filter-cable">Cables</li>
-                 <li data-filter=".filter-varnish">Varnish</li>
-                 <li data-filter=".filter-bearing">Ball Bearing</li>
-                 <li data-filter=".filter-grease">SKF Grease</li>
-                 <li data-filter=".filter-paper">Submersible Paper</li>
-                 <li data-filter=".filter-tube">Omega Rubber Tube</li>
-                 <li data-filter=".filter-sleeves">Fiber Glass Sleeves</li>
+                 <li id="wire" data-filter=".filter-wire">Wires</li>
+                 <li id="cooper-wire" data-filter=".filter-copperwire">Copper Wires</li>
+                 <li id="cables" data-filter=".filter-cable">Cables</li>
+                 <li id="varnish" data-filter=".filter-varnish">Varnish</li>
+                 <li id="bearing" data-filter=".filter-bearing">Ball Bearing</li>
+                 <li id="grease" data-filter=".filter-grease">SKF Grease</li>
+                 <li id="subpaper" data-filter=".filter-paper">Submersible Paper</li>
+                 <li id="rubbertube" data-filter=".filter-tube">Omega Rubber Tube</li>
+                 <li id="gsleeves" data-filter=".filter-sleeves">Fiber Glass Sleeves</li>
                </h4>
                </ul>
              </div>

@@ -27,10 +27,10 @@
       </div>
 
       <div class="col-lg-3 col-md-6">
-        <div class="info-box  mb-4">
+        <div class="info-box  mb-4" >
           <i class="bx bx-phone-call"></i>
           <h3>Call Us</h3>
-          <p>+91 804194712</p>
+          <a target="_blank" href="tel:+918041947127"><p>+91 8041947127</p></a>
         </div>
       </div>
 
@@ -79,11 +79,10 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
             <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','twitter','d0055'])" href="https://twitter.com/share?url=https://www.shreebalajienterprises.org/&amp;text=Shree Balaji Enterprises" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a  target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','facebook','d0055'])" href="https://www.facebook.com/sharer.php?u=https://www.shreebalajienterprises.org/"  class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a  target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','googleplus','d0055'])" href="https://plus.google.com/share?url=https://www.shreebalajienterprises.org/"  class="google-plus"><i class="bx bxl-google-plus-circle"></i></a>
+                <a target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','linkedin','d0055'])" href="https://www.linkedin.com/cws/share?url=https://www.shreebalajienterprises.org/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>

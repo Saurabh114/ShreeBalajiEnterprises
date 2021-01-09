@@ -163,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -582,9 +583,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #hero .btn-get-started, #hero .btn-watch-video {
+  #hero .btn-get-started {
     font-size: 13px;
   }
+   #hero .btn-watch-video b{
+     font-size: 13px;
+
+   }
 }
 
 @media (max-height: 500px) {
