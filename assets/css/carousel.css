@@ -124,19 +124,30 @@ font-weight: 700;
 }
 
 
-#search-container button:hover {
-  background: #ccc;
+#search-container{
+  border-radius: 40px;
 }
+
+  #search-container .search-txt{
+    border-radius: 40px;
+  }
 
 @media screen and (max-width: 600px) {
   #search-container {
     padding-left: 20px;
+
   }
 }
   #search-container button {
     float: none;
     text-align: left;
     margin: 0;
+    background: white;
+    border-radius: 40px;
+  }
+
+  #search-container button:hover {
+    padding: 0 6px;
   }
 
   @media screen and (max-width:600px) {

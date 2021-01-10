@@ -94,10 +94,11 @@
           </ul> -->
         </li>
           <li>
-            <form id="search-container" action="#">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="bx bx-search"></i></button>
-            </form>
+            <div id="search-container" action="#" class="search-container">
+                <input class="search-txt" type="text" placeholder="Search.." name="search">
+                <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
+            </div>
+
           </li>
       </ul>
     </nav>
