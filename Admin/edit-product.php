@@ -1,4 +1,16 @@
+<?php
+require 'config.php';
+$id = $_GET['bid'];
+    
+    $record = mysqli_query($con, "SELECT * FROM products WHERE id=$id");
 
+    if (count($record) == 1 ) {
+      $row = mysqli_fetch_array($record);
+      $pname = $row['pname'];
+      $pdes = $row['pdes'];
+      $img = $row['pimage'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,11 +48,11 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-files-o"></i> Add New Product</h3>
+            <h3 class="page-header"><i class="fa fa-files-o"></i>Update Product</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
               <li><i class="icon_document_alt"></i>Products</li>
-              <li><i class="fa fa-files-o"></i>Add Product</li>
+              <li><i class="fa fa-files-o"></i>Update Product</li>
             </ol>
           </div>
         </div>
@@ -53,29 +65,24 @@
               </header>
               <div class="panel-body">
                 <div class="form">
-                  <form class="form-validate form-horizontal" id="feedback_form" method="POST" action='add_product_script.php' enctype="multipart/form-data">
+                  <form class="form-validate form-horizontal" id="feedback_form" method="POST"  enctype="multipart/form-data">
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Name<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="cname" name="pname"  type="text" required />
+                        <input class="form-control" id="cname" value="<?php echo $pname ?>" name="pname"  type="text" required />
                       </div>
                     </div>
                     
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Description<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>  
+                        <textarea class="form-control" id="cdes" name="pdes"  type="text" required><?php echo $pdes?></textarea>  
                       </div>
                     </div>
-                    <div class="form-group  ">
-                      <label for="image" class="control-label col-lg-2">Product Image</label>
-                      <div class="col-lg-10">
-                        <input class="form-control" id="image"  type="file" name="image" accept="image/*"  required/>
-                      </div>
-                    </div>
+                    
                     <div class="form-group">
                       <div class="col-lg-offset-2 col-lg-10">
-                        <button class="btn btn-primary" type="submit" name="submit" value="submit">Save</button>
+                        <button class="btn btn-primary" type="submit" name="submit" value="submit">Update</button>
                       </div>
                     </div>
                   </form>
@@ -91,12 +98,7 @@
     <!--main content end-->
     <div class="text-right">
       <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
+          
          
         </div>
     </div>
@@ -121,3 +123,31 @@
 </body>
 
 </html>
+
+<?php 
+
+if (isset($_POST['submit'])) {
+
+   $pname =  $_POST['pname'];
+     $pdes = $_POST['pdes'];
+   
+            $q=mysqli_query($con, "UPDATE products SET pname='$pname', pdes='$pdes' WHERE id=$id");
+            
+            if( $q){
+                echo "<script>alert('Product Updated Successfully'); window.location.href='view_products.php'</script>";
+            }
+           
+            
+    
+
+        
+    }
+
+     
+     
+   
+    
+
+    
+
+ ?>

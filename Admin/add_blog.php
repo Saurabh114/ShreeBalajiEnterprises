@@ -57,14 +57,14 @@
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Name<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="cname" name="pname"  type="text" required />
+                        <input class="form-control" id="cname" name="pname" minlength="5" type="text" required />
                       </div>
                     </div>
                     
                     <div class="form-group ">
-                      <label for="cname" class="control-label col-lg-2"> Product Description<span class="required">*</span></label>
+                      <label for="curl" class="control-label col-lg-2">Product Description</label>
                       <div class="col-lg-10">
-                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>  
+                          <textarea class="form-control ckeditor" name="pdes" rows="6"></textarea>
                       </div>
                     </div>
                     <div class="form-group  ">

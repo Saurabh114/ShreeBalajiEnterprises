@@ -75,7 +75,8 @@
               <div class="panel-heading">
                 <h2><i class="fa fa-flag-o red"></i><strong>Product No. <?php echo $row['id'];?></strong></h2>
                 <div class="panel-actions">
-                   <a href="delete-blog.php?bid=<?php echo $row['id'];?>" class="btn-close"> Delete <i class="fa fa-times"></i></a>
+                  <a href="edit-product.php?bid=<?php echo $row['id'];?>" class="btn-close"> Edit <i class="fa fa-edit"></i></a>
+                   <a href="delete-product.php?id=<?php echo $row['id'];?>" class="btn-close"> Delete <i class="fa fa-times"></i></a>
                 </div>
               </div>
               <div class="panel-body">

@@ -50,9 +50,9 @@ if(isset($_POST['submit'])) {
             if($compressedImage != NULL)
             {
             $q = "INSERT INTO products(pname, pdes, pimage) VALUES ('$pname','$pdes','$compressedImage')";
-            echo $q;
+            
             if(mysqli_query($con, $q)){
-                echo "<script>alert('Product Added Successfully'); window.location.href='./view_blog.php'</script>";
+                echo "<script>alert('Product Added Successfully'); window.location.href='view_products.php'</script>";
             }
             else{
                echo "<script>alert('Product Not Added'); ";
@@ -72,4 +72,3 @@ if(isset($_POST['submit'])) {
 }
 
 ?>
-
