@@ -1,9 +1,4 @@
-/**
-* Template Name: BizLand - v2.0.3
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -80,35 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-}
-
-.back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-
-  color: black;
-  transition: all 0.4s;
-}
-
-.back-to-top i:hover {
-  background: #3284f1;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -168,16 +134,20 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 50px 0 15px;
+  background: #fff;
+  padding: 20px 0 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .fixed-top{
+  background: none;
 }
 
 #header.header-scrolled {
   top: 0;
-  padding: 15px;
+  padding: 15px  15px 0 15px;
 }
 
 

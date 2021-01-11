@@ -101,7 +101,7 @@
   <div class="container">
 <div class="container">
   <div class="copyright">
-    <span>Copyright &copy; <?php echo date("Y"); ?>. All Rights Reserved |      Designed & Developed by <a href="https://www.hspmsolutions.com/" style="color:#000;"><b>HSPM Solutions</b></a></span>
+    <span>Copyright &copy; <?php echo date("Y"); ?>. All Rights Reserved <i class="far fa-heart"></i>  Designed & Developed by <a href="https://www.hspmsolutions.com/" style="color:#000;"><b>HSPM Solutions</b></a></span>
   </div>
 </div>
 </div>
@@ -141,28 +141,8 @@
           box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
 }
 
-.all-btns {
-  display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  right: 1rem;
-  bottom: 2rem;
-  cursor: pointer;
-  z-index: 999;
-  -webkit-transition: 0.5s ease-in-out all;
-  transition: 0.5s ease-in-out all;
-}
 
-.all-btns .contact-logo {
+.contact-btn .contact-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,67 +159,27 @@
           box-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5), -0.1rem -0.3rem 0.3rem rgba(0, 0, 0, 0.5);
 }
 
-.all-btns .contact-logo a {
+.contact-btn .contact-logo a {
   display: block;
   color: whitesmoke;
   text-decoration: none;
 }
 
-.all-btns .contact-logo:nth-of-type(1) {
-  background: #009688;
-}
 
-.all-btns .contact-logo:nth-of-type(1):hover {
-  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
-}
-
-.all-btns .contact-logo:nth-of-type(2) {
+.contact-btn .contact-logo:nth-of-type(2) {
   background: dodgerblue;
 }
 
-.all-btns .contact-logo:nth-of-type(2):hover {
+.contact-btn .contact-logo:nth-of-type(2):hover {
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
 }
 
-.all-btns .contact-logo:nth-of-type(3) {
-  background: #e41749;
-}
-
-.all-btns .contact-logo:nth-of-type(3):hover {
-  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.7), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.7);
-}
-
-.all-btns .contact-logo:nth-of-type(4) {
-  background: #fc5185;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.all-btns .contact-logo:nth-of-type(4):hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
 
 </style>
 <div class="contact-btn" id="contact-btn">
     <div class="contact-logo">
-        <i class="fa fa-comments" aria-hidden="true"></i>
-    </div>
-</div>
-
-<div class="all-btns" id="all-btns">
-    <div class="contact-logo">
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=8041947127"><i class="fa fa-whatsapp"
-                aria-hidden="true"></i></a>
-    </div>
-    <div class="contact-logo">
-        <a target="_blank" href="tel:08041947127"><i class="fa fa-phone" aria-hidden="true"></i></a>
-    </div>
-    <div class="contact-logo" id="close-btn">
-        <i class="fa fa-times" aria-hidden="true"></i>
+      <a target="_blank" href="tel:08041947127"><i class="fa fa-phone" aria-hidden="true"></i></a>
     </div>
 </div>
 <script>
