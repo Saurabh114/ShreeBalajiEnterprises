@@ -53,24 +53,24 @@
               </header>
               <div class="panel-body">
                 <div class="form">
-                  <form class="form-validate form-horizontal" id="feedback_form" method="post" action='add_blog_script.php' enctype="multipart/form-data">
+                  <form class="form-validate form-horizontal" id="feedback_form" method="POST" action='add_blog_script.php' enctype="multipart/form-data">
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Name<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="cname" name="title" minlength="5" type="text" required />
+                        <input class="form-control" id="cname" name="pname" minlength="5" type="text" required />
                       </div>
                     </div>
                     
                     <div class="form-group ">
                       <label for="curl" class="control-label col-lg-2">Product Description</label>
                       <div class="col-lg-10">
-                          <textarea class="form-control ckeditor" name="blog" rows="6"></textarea>
+                          <textarea class="form-control ckeditor" name="pdes" rows="6"></textarea>
                       </div>
                     </div>
                     <div class="form-group  ">
                       <label for="image" class="control-label col-lg-2">Product Image</label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="image" type="file" name="image" accept="image/*"  required/>
+                        <input class="form-control" id="image"  type="file" name="image" accept="image/*"  required/>
                       </div>
                     </div>
                     <div class="form-group">

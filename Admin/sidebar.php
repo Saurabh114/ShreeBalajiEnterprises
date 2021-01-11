@@ -60,8 +60,8 @@
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
         <ul class="sub">
-          <li><a class="" href="form_component.html">Add Products</a></li>
-          <li><a class="" href="form_validation.html">Remove Products</a></li>
+          <li><a class="" href="add_product.php">Add Products</a></li>
+          <li><a class="" href="view_products.php">All Products</a></li>
         </ul>
       </li>
       <li class="sub-menu">
