@@ -42,7 +42,7 @@
 <!--=========== Header ============-->
     <?php include("includes/header.php") ?>
 
-    
+
 
     <section id="hero" class="d-flex align-items-center">
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
@@ -218,7 +218,7 @@
           <div id="laurelcopper" class="col-lg-4 col-md-6 portfolio-item filter-copperwire">
             <div class="portfolio-info">
             <img src="assets/images/29.jpg" class="img-fluid" alt="">
-              <h6>Laurel Copper Winding Wire</h6>
+              <h4>Laurel Copper Winding Wire</h4>
               <p>Approx. Price: Rs 545 / Piece</p>
               <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#laurel">
                 <p style="color: #0e49b5;">Click to know More </p>

@@ -36,7 +36,7 @@
 #carousel .carousel-wrapper{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 900px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -108,6 +108,17 @@ font-weight: 700;
 #carousel .carousel-wrapper .flickity-slider{
     overflow: visible;
 }
+
+#carousel .carousel-wrapper .flickity-slider{
+padding-top: 50px;
+}
+
+@media only screen and (max-width:760px){
+  #carousel .carousel-wrapper .flickity-slider{
+    padding-top: 10px;
+  }
+}
+
 @media only screen and (max-width:760px){
     #carousel .carousel-wrapper .carousel .carousel-cell{
         width: auto;

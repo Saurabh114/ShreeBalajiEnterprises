@@ -45,7 +45,7 @@
       <h1 style="color:#fff;">Shree Balaji <span>Enterprises </span> </h1>
       <h2 style="color:#fff;"> Wholesale Trader of Submersible Wire &amp; Copper Winding Wire from Pune</h2>
       <div class="d-flex">
-        <a href="#carousel" class="btn-get-started scrollto">Our Products</a>
+        <a href="products.php#portfolio" class="btn-get-started scrollto">Our Products</a>
         <a href="" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"><b style="color:#fff">Corporate Video</b> <i class="icofont-play-alt-2"></i></a>
       </div>
     </div>
@@ -57,7 +57,7 @@
 
   <main id="main">
 
-    <section id="carousel" class="carousel">
+    <section id="carousel" class="carousel-section">
       <div class="section-title" style="padding-left: 90px;padding-right: 90px;">
     <h3 style="padding-bottom:15px;">Our <span>Products</span></h3>
     <h5 > <b>Shree Balaji Enterprises </b>is a dependable name in the market as wholesaler and trader of Automobile Products, established in 2012. </h5>
@@ -99,6 +99,21 @@
             <h6>Swastik Super Enameled Copper Wire</h6>
             <img src="assets/images/52.png" alt="">
             <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#swastiksuper" role="button">Explore More</a></span>
+          </div>
+          <div class="carousel-cell"  data-aos="zoom-in" data-aos-delay="100">
+            <h6>SKF Bearing</h6>
+            <img src="assets/images/42.jpg" alt="">
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#skfbears" role="button">Explore More</a></span>
+          </div>
+          <div class="carousel-cell" style="padding-bottom:0;"  data-aos="zoom-in" data-aos-delay="100">
+            <h6>SKF Grease Tube</h6>
+            <img src="assets/images/41.jpg" alt="">
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#skftube" role="button">Explore More</a></span>
+          </div>
+          <div class="carousel-cell" style="padding-bottom:0;"  data-aos="zoom-in" data-aos-delay="100">
+            <h6>R R Cable</h6>
+            <img src="assets/images/17.jpg" alt="">
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#rrcab" role="button">Explore More</a></span>
           </div>
         </div>
       </div>
