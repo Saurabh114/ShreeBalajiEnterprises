@@ -24,6 +24,7 @@
         <li><a href="index.php">Home</a></li>
         <li class="drop-down"><a href="about.php">About</a>
           <ul>
+            <li><a href="about.php">About Us</a>
             <li><a href="broucher.php?file=shree-balaji-enterprises" target="_blank">Download Broucher</a></li>
           </ul>
         </li>
