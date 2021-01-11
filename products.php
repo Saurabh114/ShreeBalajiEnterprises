@@ -44,32 +44,19 @@
 
 
 
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h1 style="color:#fff;">Automobile <span>Products </span> </h1>
-        <h2 style="color:#fff;"> <span>W</span>e are a customer centric & quality conscious organization endeavor to provide qualitative range of Dr Beck Varnish,
-          Fg Cable and Fiber Glass Cloth. Our products get immense appreciation from our clients owing to their quality, fine finishing, scratch resistant and environment friendliness.
-           </h2>
-        <div class="d-flex">
-          <a href="#portfolio" class="btn-get-started scrollto">All Products</a>
-          </div>
-      </div>
-    </section><!-- End Hero -->
-
-
-
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" style="padding-top:150px;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h3>Check our <span>Products</span></h3>
         </div>
-        <p>We are a customer centric & quality conscious organization endeavor to provide qualitative range of Dr Beck Varnish, Fg Cable and Fiber Glass Cloth.
-           Our products get immense appreciation from our clients owing to their quality, fine finishing, scratch resistant and environment friendliness.</p>
+        <p>      <span style="font-size:20px;">We</span> are a customer centric & quality conscious organization endeavor to provide qualitative range of Dr Beck Varnish,
+          Fg Cable and Fiber Glass Cloth. Our products get immense appreciation from our clients owing to their quality, fine finishing, scratch resistant and environment friendliness.
+          </p>
 
-           <div class="row" data-aos="fade-up" data-aos-delay="100">
+           <div id="product-filter" class="row" data-aos="fade-up" data-aos-delay="100">
              <div class="col-lg-12 d-flex justify-content-center">
                <ul id="portfolio-flters">
                  <h4>
