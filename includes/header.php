@@ -30,6 +30,7 @@
         </li>
         <li class="drop-down"><a href="products.php#portfolio">Our Products</a>
           <ul>
+            <li><a href="products.php#portfolio">All Products</a>
             <li class="drop-down"><a href="products.php#wire" >Wire</a>
               <ul>
                 <li class="drop-down"><a href="products.php#wire">Submersible Wire</a>
