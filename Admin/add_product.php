@@ -53,15 +53,11 @@
               </header>
               <div class="panel-body">
                 <div class="form">
-<<<<<<< HEAD:Admin/add_products.php
                   <form class="form-validate form-horizontal" id="feedback_form" method="post" action='add_Product_script.php' enctype="multipart/form-data">
-=======
                   <form class="form-validate form-horizontal" id="feedback_form" method="POST" action='add_product_script.php' enctype="multipart/form-data">
->>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214:Admin/add_product.php
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Title<span class="required">*</span></label>
                       <div class="col-lg-10">
-<<<<<<< HEAD:Admin/add_products.php
                         <input class="form-control" id="cname" name="title" minlength="5" type="text" required />
                       </div>
                     </div>
@@ -69,9 +65,7 @@
                       <label for="cemail" class="control-label col-lg-2"> Product Summary <span class="required">*</span></label>
                       <div class="col-lg-10">
                         <input class="form-control " id="cemail" type="text" name="summary" required />
-=======
                         <input class="form-control" id="cname" name="pname"  type="text" required />
->>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214:Admin/add_product.php
                       </div>
                     </div>
                     <div class="form-group ">
@@ -80,7 +74,7 @@
 <<<<<<< HEAD:Admin/add_products.php
                           <textarea class="form-control ckeditor" name="product" rows="6"></textarea>
 =======
-                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>  
+                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>
 >>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214:Admin/add_product.php
                       </div>
                     </div>
