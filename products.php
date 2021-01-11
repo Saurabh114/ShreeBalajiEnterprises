@@ -1022,6 +1022,7 @@ function carousel() {
          </div>
        </div>
 
+
        <div class="modal fade" id="balajiWinding" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
            <div class="modal-content" style="background-image: linear-gradient(to right, #c6ebc9, #fff); color: #222; backdrop-filter: blur(10px);">
