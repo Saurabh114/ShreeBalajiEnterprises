@@ -47,6 +47,27 @@ require 'Admin/config.php';
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+
+ <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+ 
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+</style>
+<!--=========== Header ============-->
+    <?php include("includes/header.php") ?>
+
+>>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214
 
  <style type="text/css">
 .zoom {
