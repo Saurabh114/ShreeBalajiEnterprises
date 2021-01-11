@@ -71,8 +71,8 @@
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
         <ul class="sub">
-          <li><a class="" href="general.html">Add Blog</a></li>
-          <li><a class="" href="buttons.html">Remove blog</a></li>
+          <li><a class="" href="general.php">Add Blog</a></li>
+          <li><a class="" href="buttons.php">Remove blog</a></li>
         </ul>
       </li>
       <li class="sub-menu">
@@ -82,7 +82,7 @@
         </a>
       </li>
       <li>
-        <a class="" href="widgets.html">
+        <a class="" href="widgets.php">
           <i class="icon_genius"></i>
           <span>Requirements</span>
         </a>

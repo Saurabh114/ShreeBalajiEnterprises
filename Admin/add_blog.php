@@ -60,7 +60,7 @@
                         <input class="form-control" id="cname" name="title" minlength="5" type="text" required />
                       </div>
                     </div>
-                    
+
                     <div class="form-group ">
                       <label for="curl" class="control-label col-lg-2">Product Description</label>
                       <div class="col-lg-10">
@@ -91,13 +91,7 @@
     <!--main content end-->
     <div class="text-right">
       <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
-         
+        
         </div>
     </div>
   </section>
