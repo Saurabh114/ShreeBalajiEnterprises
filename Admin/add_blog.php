@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
 
   <title>Add Products</title>
 
@@ -91,7 +91,7 @@
     <!--main content end-->
     <div class="text-right">
       <div class="credits">
-        
+
         </div>
     </div>
   </section>
