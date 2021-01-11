@@ -36,11 +36,11 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-files-o"></i> Add New Blog</h3>
+            <h3 class="page-header"><i class="fa fa-files-o"></i> Add New Product</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-              <li><i class="icon_document_alt"></i>Blogs</li>
-              <li><i class="fa fa-files-o"></i>Add Blog</li>
+              <li><i class="icon_document_alt"></i>Products</li>
+              <li><i class="fa fa-files-o"></i>Add Product</li>
             </ol>
           </div>
         </div>
@@ -49,7 +49,7 @@
           <div class="col-lg-12">
             <section class="panel">
               <header class="panel-heading">
-                Blog Details
+                Add New Product
               </header>
               <div class="panel-body">
                 <div class="form">
