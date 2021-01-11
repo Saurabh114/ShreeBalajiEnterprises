@@ -80,8 +80,8 @@
        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
          <div class="info-box dark-bg">
            <i class="fa fa-thumbs-o-up"></i>
-           <div class="count">14</div>
-           <div class="title">Services</div>
+           <div class="count">36</div>
+           <div class="title">Products</div>
          </div>
          <!--/.info-box-->
        </div>
@@ -134,9 +134,46 @@
            </div>
 
          </div>
-
        </div>
+       </div>
+       <div class="row">
+         <div class="col-lg-12">
+           <section class="panel">
+             <header class="panel-heading">
+               Contact Requests
+             </header>
 
+             <table class="table table-striped table-advance table-hover">
+               <tbody>
+                 <tr>
+                   <th><i class="icon_profile"></i> Full Name</th>
+                   <th><i class="icon_mail_alt"></i> Email</th>
+                   <th><i class="icon_pencil"></i> Subject</th>
+                   <th><i class="icon_mail"></i> Message</th>
+                   <th><i class="icon_clock"></i> Time</th>
+                   <th><i class="icon_cogs"></i> Remove</th>
+                 </tr>
+
+                   <tbody>
+                   <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td>
+                     <div class="btn-group">
+                       <a class="btn btn-danger" href="delete-contact.php?id="><i class="icon_close_alt2"></i></a>
+                     </div>
+                   </td>
+                   </tr>
+
+
+               </tbody>
+             </table>
+           </section>
+         </div>
+       </div>
 
 
 

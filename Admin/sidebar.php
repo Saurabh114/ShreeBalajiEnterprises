@@ -11,7 +11,7 @@
     <a href="index.php" class="logo me-au"><span class="lite">Shree</span> Balaji Enterprises</a>
 
 
-  
+
 
     <div class="top-nav notification-row">
       <!-- notificatoin dropdown start-->
@@ -19,9 +19,12 @@
 
         <li class="dropdown">
           <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-            <span class="username">Admin</span>
-            <b class="caret"></b>
-          </a>
+               <span class="profile-ava">
+                   <img alt="" src="">
+               </span>
+               <span class="username">Admin</span>
+               <b class="caret"></b>
+           </a>
           <ul class="dropdown-menu extended logout">
             <div class="log-arrow-up"></div>
             <li>
@@ -45,7 +48,7 @@
     <!-- sidebar menu start-->
     <ul class="sidebar-menu">
       <li class="active">
-        <a class="" href="index.html">
+        <a class="" href="index.php">
           <i class="icon_house_alt"></i>
           <span>Dashboard</span>
         </a>
@@ -63,25 +66,7 @@
       </li>
       <li class="sub-menu">
         <a href="javascript:;" class="">
-          <i class="icon_desktop"></i>
-          <span>Contacts</span>
-          <span class="menu-arrow arrow_carrot-right"></span>
-        </a>
-        <ul class="sub">
-          <li><a class="" href="general.html">Elements</a></li>
-          <li><a class="" href="buttons.html">Buttons</a></li>
-          <li><a class="" href="grids.html">Grids</a></li>
-        </ul>
-      </li>
-      <li>
-        <a class="" href="widgets.html">
-          <i class="icon_genius"></i>
-          <span>Queries</span>
-        </a>
-      </li>
-      <li class="sub-menu">
-        <a href="javascript:;" class="">
-          <i class="icon_desktop"></i>
+          <i class="icon_document_alt"></i>
           <span>Blog</span>
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
@@ -89,6 +74,18 @@
           <li><a class="" href="general.html">Add Blog</a></li>
           <li><a class="" href="buttons.html">Remove blog</a></li>
         </ul>
+      </li>
+      <li class="sub-menu">
+        <a href="contact.php" class="">
+          <i class="icon_phone"></i>
+          <span>Contacts</span>
+        </a>
+      </li>
+      <li>
+        <a class="" href="widgets.html">
+          <i class="icon_genius"></i>
+          <span>Requirements</span>
+        </a>
       </li>
     </ul>
     <!-- sidebar menu end-->
