@@ -32,9 +32,7 @@
             </li>
           </ul>
         </li>
-        <!-- user login dropdown end -->
       </ul>
-      <!-- notificatoin dropdown end-->
     </div>
   </header>
   <!--header end-->
@@ -60,13 +58,8 @@
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
         <ul class="sub">
-<<<<<<< HEAD
           <li><a class="" href="add_products.php">Add Products</a></li>
-          <li><a class="" href="dlt_product.php">Remove Products</a></li>
-=======
-          <li><a class="" href="add_product.php">Add Products</a></li>
           <li><a class="" href="view_products.php">All Products</a></li>
->>>>>>> 1cdc2fb0a6fd1938be4aefaeb3833ef20ce6bacd
         </ul>
       </li>
       <li class="sub-menu">
@@ -77,7 +70,7 @@
         </a>
         <ul class="sub">
           <li><a class="" href="general.php">Add Blog</a></li>
-          <li><a class="" href="buttons.php">Remove blog</a></li>
+          <li><a class="" href="buttons.php">View Blog</a></li>
         </ul>
       </li>
       <li class="sub-menu">

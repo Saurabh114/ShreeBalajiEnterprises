@@ -101,7 +101,7 @@
   <div class="container">
 <div class="container">
   <div class="copyright">
-    <span>Copyright &copy; <?php echo date("Y"); ?>. All Rights Reserved <i class="far fa-heart"></i>  Designed & Developed by <a href="https://www.hspmsolutions.com/" style="color:#000;"><b>HSPM Solutions</b></a></span>
+    <span>Copyright &copy; <?php echo date("Y"); ?>. All Rights Reserved |  Designed & Developed by <a href="https://www.hspmsolutions.com/" style="color:#000;"><b>HSPM Solutions</b></a></span>
   </div>
 </div>
 </div>
