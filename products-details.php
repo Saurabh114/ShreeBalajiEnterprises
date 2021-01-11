@@ -54,11 +54,11 @@
 
 
 
-<!--Model Popo-up-->
 
         <section>
           <div class="">
 
+            <!--Model Popo-up-->
 
                    <div class="modal fade" id="vagale" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                      <div class="modal-dialog modal-dialog-centered" role="document">
