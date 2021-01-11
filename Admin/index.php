@@ -1,3 +1,10 @@
+<?php
+    require 'config.php';
+    $query="select * from admin";
+    $q=mysqli_query($con,$query);
+    $row=mysqli_fetch_assoc($q);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,7 +77,7 @@
        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
          <div class="info-box brown-bg">
            <i class="fa fa-user"></i>
-           <div class="count"></div>
+           <div class="count">1</div>
            <div class="title">Admins</div>
          </div>
          <!--/.info-box-->
@@ -117,7 +124,7 @@
              <table class="table bootstrap-datatable countries">
                <thead>
                  <tr>
-                   <th></th>
+                   <th>id</th>
                    <th>Name</th>
                    <th>Email</th>
                  </tr>
@@ -125,8 +132,9 @@
                <tbody>
 
                  <tr>
-                   <td></td>
-                   <td></td>
+                  <td>1</td>
+                   <td><?php echo $row['admin_name'] ?></td>
+                   <td><?php echo $row['email_id'] ?></td>
                  </tr>
 
                </tbody>

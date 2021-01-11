@@ -198,11 +198,11 @@ require 'Admin/config.php';
           <br>
           </div>
 
-        <form >
+        <form method="POST" action="user-query.php">
           <div class="row">
           <div class="col-lg-2"> </div>
           <div class="form-group col-lg-8">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Describe Your Requiremnets in details:"></textarea>
+            <textarea name="query" class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Describe Your Requiremnets in details:"></textarea>
           </div>
           <div class="col-lg-2"></div>
         </div>
@@ -211,12 +211,12 @@ require 'Admin/config.php';
           <div class="col-lg-2"></div>
           <div class="form-group col-lg-4">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contct Number">
+            <input type="text" maxlength="10" name="mobile" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number">
           </div>
 
           <div class="form-group col-lg-4">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
           </div>
           <div class="col-lg-2"></div>
         </div>
