@@ -60,8 +60,13 @@
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
         <ul class="sub">
+<<<<<<< HEAD
           <li><a class="" href="add_products.php">Add Products</a></li>
           <li><a class="" href="dlt_product.php">Remove Products</a></li>
+=======
+          <li><a class="" href="add_product.php">Add Products</a></li>
+          <li><a class="" href="view_products.php">All Products</a></li>
+>>>>>>> 1cdc2fb0a6fd1938be4aefaeb3833ef20ce6bacd
         </ul>
       </li>
       <li class="sub-menu">
