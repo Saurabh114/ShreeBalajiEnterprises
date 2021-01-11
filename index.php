@@ -1,3 +1,12 @@
+<?php 
+require 'Admin/config.php';
+    $query="select * from products";
+    $display_product=mysqli_query($con,$query);
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +45,18 @@
 </head>
 
 <body>
+  <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.8); 
+}
+</style>
 <!--=========== Header ============-->
     <?php include("includes/header.php") ?>
 
@@ -63,58 +84,18 @@
     <h5 > <b>Shree Balaji Enterprises </b>is a dependable name in the market as wholesaler and trader of Automobile Products, established in 2012. </h5>
       <hr>
     </div>
+    
       <div class="carousel-wrapper">
-        <div class="carousel" data-flickity='{ "autoPlay": true }' data-aos="zoom-in" data-aos-delay="100">
+        <div class="carousel" data-flickity='{ "autoPlay": true }' data-aos="zoom-in" data-aos-delay="10">
+          <?php
+            while($row=mysqli_fetch_array($display_product)){
+?>
           <div class="carousel-cell active">
-            <h6>Vagale Submersible Wire</h6>
-            <img src="assets/images/34.jpg" alt="">
+            <h6><?php echo $row['pname'] ?></h6>
+            <img class="zoom" src="Admin/<?php echo $row['pimage'];?>" alt="">
             <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#vagalesub" role="button">Explore More</a></span>
           </div>
-          <div class="carousel-cell" data-aos="zoom-in" data-aos-delay="100">
-            <h6>R R Shamik Enameled Copper Wire</h6>
-            <img src="assets/images/19.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#rrenameled" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell"data-aos="zoom-in" data-aos-delay="100">
-            <h6>Submersible Winding Wire</h6>
-            <img src="assets/images/23.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#subwinding" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell"data-aos="zoom-in" data-aos-delay="100">
-            <h6>Balaji Submersible Windiing Wire</h6>
-            <img src="assets/images/1.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#balajiWindingWire" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell" data-aos="zoom-in" data-aos-delay="100">
-            <h6>Laurel Copper Winding Wire</h6>
-            <img src="assets/images/29.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#laurelcopper" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell" style="padding-bottom:0;" data-aos="zoom-in" data-aos-delay="100">
-            <h6>R R Shamik Submersible Winding Wire</h6>
-            <img src="assets/images/22.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#balajiWindingWire" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell" style="padding-bottom:0;"  data-aos="zoom-in" data-aos-delay="100">
-            <h6>Swastik Super Enameled Copper Wire</h6>
-            <img src="assets/images/52.png" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#swastiksuper" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell"  data-aos="zoom-in" data-aos-delay="100">
-            <h6>SKF Bearing</h6>
-            <img src="assets/images/42.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#skfbears" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell" style="padding-bottom:0;"  data-aos="zoom-in" data-aos-delay="100">
-            <h6>SKF Grease Tube</h6>
-            <img src="assets/images/41.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#skftube" role="button">Explore More</a></span>
-          </div>
-          <div class="carousel-cell" style="padding-bottom:0;"  data-aos="zoom-in" data-aos-delay="100">
-            <h6>R R Cable</h6>
-            <img src="assets/images/17.jpg" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#rrcab" role="button">Explore More</a></span>
-          </div>
+          <?php } ?>
         </div>
       </div>
     </section>
@@ -217,11 +198,11 @@
           <br>
           </div>
 
-        <form >
+        <form method="POST" action="user-query.php">
           <div class="row">
           <div class="col-lg-2"> </div>
           <div class="form-group col-lg-8">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Describe Your Requiremnets in details:"></textarea>
+            <textarea name="query" class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Describe Your Requiremnets in details:"></textarea>
           </div>
           <div class="col-lg-2"></div>
         </div>
@@ -230,12 +211,12 @@
           <div class="col-lg-2"></div>
           <div class="form-group col-lg-4">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contct Number">
+            <input type="text" maxlength="10" name="mobile" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number">
           </div>
 
           <div class="form-group col-lg-4">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
           </div>
           <div class="col-lg-2"></div>
         </div>
