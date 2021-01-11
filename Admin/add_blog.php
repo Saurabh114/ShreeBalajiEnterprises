@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../assets/img/favicon.ico" rel="icon">
 
-  <title>Add Blog</title>
+  <title>Add Products</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
