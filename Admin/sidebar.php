@@ -76,7 +76,18 @@
         </ul>
       </li>
       <li class="sub-menu">
-        <a href="contact.php" class="">
+            <a href="javascript:;" class="">
+                          <i class="icon_document_alt"></i>
+                          <span>Admin</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+              <li><a class="" href="add_admin.php">Add admin</a></li>
+              <li><a class="" href="view_admin.php">View admins</a></li>
+            </ul>
+          </li>
+      <li class="sub-menu">
+        <a href="contact_request.php" class="">
           <i class="icon_phone"></i>
           <span>Contacts</span>
         </a>

@@ -305,6 +305,7 @@ require 'Admin/config.php';
 
   <!--============ Footer ===============-->
 
+
     <?php include("includes/footer.php") ?>
 
   <!-- Vendor JS Files -->
