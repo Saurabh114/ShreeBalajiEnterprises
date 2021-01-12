@@ -72,6 +72,23 @@ $id = $_GET['bid'];
                         <input class="form-control" id="cname" value="<?php echo $pname ?>" name="pname"  type="text" required />
                       </div>
                     </div>
+                    <div class="form-group ">
+                      <label for="pcat" class="control-label col-lg-2"> Product Category<span class="required">*</span></label>
+                      <div class="col-lg-10">
+                        <select id="pcat" name="pcat">
+                           <option>Wires</option>
+                           <option>Copper Wires</option>
+                           <option>Cables</option>
+                           <option>Varnish</option>
+                           <option>Ball Bearing</option>
+                           <option>SKF Grease</option>
+                           <option>Submersible Papers</option>
+                           <option>Omega Rubber Tube</option>
+                           <option>Fibre Glass Sleeves</option>
+                         </select>
+                       
+                      </div>
+                    </div>
                     
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Description<span class="required">*</span></label>
@@ -130,8 +147,9 @@ if (isset($_POST['submit'])) {
 
    $pname =  $_POST['pname'];
      $pdes = $_POST['pdes'];
+     $pcat = $_POST['pcat'];
    
-            $q=mysqli_query($con, "UPDATE products SET pname='$pname', pdes='$pdes' WHERE id=$id");
+            $q=mysqli_query($con, "UPDATE products SET pname='$pname', pdes='$pdes', pcategory='$pcat' WHERE id=$id");
             
             if( $q){
                 echo "<script>alert('Product Updated Successfully'); window.location.href='view_products.php'</script>";

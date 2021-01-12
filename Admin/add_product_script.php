@@ -8,6 +8,7 @@ if(isset($_POST['submit'])) {
 
     $pname= mysqli_real_escape_string($con, $_POST['pname']);
     $pdes= mysqli_real_escape_string($con, $_POST['pdes']);
+    $pcat= mysqli_real_escape_string($con, $_POST['pcat']);
     $image = $_FILES['image']['name'];
 
     function compressImage($source, $destination, $quality)
@@ -49,7 +50,7 @@ if(isset($_POST['submit'])) {
             $compressedImage = compressImage($imageTemp, $uploadPath, 50);
             if($compressedImage != NULL)
             {
-            $q = "INSERT INTO products(pname, pdes, pimage) VALUES ('$pname','$pdes','$compressedImage')";
+            $q = "INSERT INTO products(pname,pcategory, pdes, pimage) VALUES ('$pname','$pcat','$pdes','$compressedImage')";
             
             if(mysqli_query($con, $q)){
                 echo "<script>alert('Product Added Successfully'); window.location.href='view_products.php'</script>";

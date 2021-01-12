@@ -58,7 +58,7 @@
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
         <ul class="sub">
-          <li><a class="" href="add_products.php">Add Products</a></li>
+          <li><a class="" href="add_product.php">Add Products</a></li>
           <li><a class="" href="view_products.php">All Products</a></li>
         </ul>
       </li>
