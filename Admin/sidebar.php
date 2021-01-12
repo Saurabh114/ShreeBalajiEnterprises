@@ -32,9 +32,7 @@
             </li>
           </ul>
         </li>
-        <!-- user login dropdown end -->
       </ul>
-      <!-- notificatoin dropdown end-->
     </div>
   </header>
   <!--header end-->
@@ -60,7 +58,7 @@
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
         <ul class="sub">
-          <li><a class="" href="add_product.php">Add Products</a></li>
+          <li><a class="" href="add_products.php">Add Products</a></li>
           <li><a class="" href="view_products.php">All Products</a></li>
         </ul>
       </li>
@@ -70,7 +68,7 @@
           <span>Blog</span>
           <span class="menu-arrow arrow_carrot-right"></span>
         </a>
-        <ul class="sub">
+       <ul class="sub">
           <li><a class="" href="add_blog.php">Add Blog</a></li>
           <li><a class="" href="view_blog.php">All blog</a></li>
         </ul>
@@ -93,7 +91,7 @@
         </a>
       </li>
       <li>
-        <a class="" href="widgets.html">
+        <a class="" href="widgets.php">
           <i class="icon_genius"></i>
           <span>Requirements</span>
         </a>

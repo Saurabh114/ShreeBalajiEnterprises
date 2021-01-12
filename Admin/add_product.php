@@ -5,9 +5,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
 
-  <title>Add Blog</title>
+  <title>Add Product</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <h3 class="page-header"><i class="fa fa-files-o"></i> Add New Product</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-              <li><i class="icon_document_alt"></i>Products</li>
+              <li><i class="icon_document_alt"></i>Product</li>
               <li><i class="fa fa-files-o"></i>Add Product</li>
             </ol>
           </div>
@@ -49,28 +49,39 @@
           <div class="col-lg-12">
             <section class="panel">
               <header class="panel-heading">
-                Add New Product
+                Product Details
               </header>
               <div class="panel-body">
                 <div class="form">
+                  <form class="form-validate form-horizontal" id="feedback_form" method="post" action='add_Product_script.php' enctype="multipart/form-data">
                   <form class="form-validate form-horizontal" id="feedback_form" method="POST" action='add_product_script.php' enctype="multipart/form-data">
                     <div class="form-group ">
-                      <label for="cname" class="control-label col-lg-2"> Product Name<span class="required">*</span></label>
+                      <label for="cname" class="control-label col-lg-2"> Product Title<span class="required">*</span></label>
                       <div class="col-lg-10">
+                        <input class="form-control" id="cname" name="title" minlength="5" type="text" required />
+                      </div>
+                    </div>
+                    <div class="form-group ">
+                      <label for="cemail" class="control-label col-lg-2"> Product Summary <span class="required">*</span></label>
+                      <div class="col-lg-10">
+                        <input class="form-control " id="cemail" type="text" name="summary" required />
                         <input class="form-control" id="cname" name="pname"  type="text" required />
                       </div>
                     </div>
-                    
                     <div class="form-group ">
                       <label for="cname" class="control-label col-lg-2"> Product Description<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>  
+<<<<<<< HEAD:Admin/add_products.php
+                          <textarea class="form-control ckeditor" name="product" rows="6"></textarea>
+=======
+                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>
+>>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214:Admin/add_product.php
                       </div>
                     </div>
                     <div class="form-group  ">
                       <label for="image" class="control-label col-lg-2">Product Image</label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="image"  type="file" name="image" accept="image/*"  required/>
+                        <input class="form-control" id="image" type="file" name="image" accept="image/*"  required/>
                       </div>
                     </div>
                     <div class="form-group">
@@ -91,13 +102,8 @@
     <!--main content end-->
     <div class="text-right">
       <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
-         
+
+
         </div>
     </div>
   </section>

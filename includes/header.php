@@ -1,15 +1,7 @@
 <!-- ======= Top Bar ======= -->
-<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-  <div class="container d-flex">
-    <div class="contact-info me-auto">
-      <a target="_blank" href="tel:+918041947127"><i class="fa fa-phone" ></i>  +91 8041947127</a>
-    </div>
-    <div class="social-links">
-      <a target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','twitter','d0055'])" href="https://twitter.com/share?url=https://www.shreebalajienterprises.org/&amp;text=Shree Balaji Enterprises" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a  target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','facebook','d0055'])" href="https://www.facebook.com/sharer.php?u=https://www.shreebalajienterprises.org/"  class="facebook"><i class="bx bxl-facebook"></i></a>
-      <a  target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','googleplus','d0055'])" href="https://plus.google.com/share?url=https://www.shreebalajienterprises.org/"  class="google-plus"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
-      <a target="_blank" onclick="_gaq.push(['b._trackEvent','Bottom','linkedin','d0055'])" href="https://www.linkedin.com/cws/share?url=https://www.shreebalajienterprises.org/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-    </div>
+<div id="" class="">
+  <div class="">
+
   </div>
 </div>
 
@@ -28,7 +20,7 @@
             <li><a href="broucher.php?file=shree-balaji-enterprises" target="_blank">Download Broucher</a></li>
           </ul>
         </li>
-        <li class="drop-down"><a href="products.php#portfolio">Our Products</a>
+        <li class="drop-down"><a href="products.php">Our Products</a>
           <ul>
             <li><a href="products.php#portfolio">All Products</a>
             <li class="drop-down"><a href="products.php#wire" >Wire</a>
@@ -89,19 +81,17 @@
             <li><a href="products.php#ortube">Omega Rubber Tape</a></li>
             <li><a href="products.php#fibesleeves">Fiber Glass Sleeves</a></li>
           </ul>
+          <li><a href="blog.php">Blog</a></li>
         </li>
         <li><a href="#contact">Contact</a>
-          <!-- <ul>
-            <li><a href="#">For Best Deals</a></li>
-          </ul> -->
         </li>
-          <li>
+          <!-- <li>
             <div id="search-container" action="#" class="search-container">
                 <input class="search-txt" type="text" placeholder="Search.." name="search">
                 <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
             </div>
 
-          </li>
+          </li> -->
       </ul>
     </nav>
     <!-- .nav-menu -->
