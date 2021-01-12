@@ -82,7 +82,9 @@
               <div class="panel-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <h4><strong>Product Name:  </strong> <?php echo $row['pname'];?><br><br><strong>Description: </strong><?php echo $row['pdes'];?></h4><br>
+                        <h4><strong>Product Name:  </strong> <?php echo $row['pname'];?><br><br>
+                          <strong>Description: </strong><?php echo $row['pdes'];?><br><br>
+                          <strong>Category: </strong><?php echo $row['pcategory'];?></h4><br>
                     </div>
                     <div class="col-md-6">
                         <img style="width: 150px;" src="<?php echo $row['pimage'];?>">
