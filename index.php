@@ -148,85 +148,85 @@ require 'Admin/config.php';
 
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container" data-aos="fade-up">
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h3 style="margin-top:40px;">About<span> Us</span></h3>
-          <br />
-          <h5>We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
-             Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h5>
+      <div class="section-title">
+        <h3 style="margin-top:40px;">About<span> Us</span></h3>
+        <br />
+        <h5>We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
+           Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h5>
 <hr>
-          </div>
+        </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-3  pt-2 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul>
-              <li>
-                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                <div>
-                  <h5>Nature Of Business</h5>
-                  <p>Wholesale Traders</p>
-                </div>
-              </li>
-              <li>
-                <i class="fa fa-gavel" aria-hidden="true"></i>
-                <div>
-                  <h5>Legal Status Of Firm</h5>
-                  <p>Individual Proprietor</p>
-                </div>
-              </li>
-
-            </ul>
-              </div>
-          <div class="col-lg-4 col-md-3 pt-2 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-            <ul>
-              <li>
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <div>
-                  <h5>Total Number Of Employees</h5>
-                  <p>26 To 50 People</p>
-                </div>
-              </li>
-              <li>
-                <i class="fa fa-money" aria-hidden="true"></i>
-                <div>
-                  <h5>Annual Turnover</h5>
-                  <p>Rs. 25 to 50 Crore</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-3 pt-2 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul>
-              <li>
-                <i class="fa fa-building-o" aria-hidden="true"></i>
-                <div>
-                  <h5>Year Of Estabilishment</h5>
-                  <p>2012</p>
-                </div>
-              </li>
-              <li>
-                <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                <div>
-                  <h5>GST No.</h5>
-                  <p>27CIEPS5499B3ZT</p>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-lg-3 col-md-2" >
-          </div>
-          <div class="col-lg-3 col-md-2" >
-          </div>
-          <div class="col-lg-3 col-md-2" >
-          </div>
-          <div class="col-lg-3 col-md-2" style="padding-bottom:5px;">
-            <a class="btn btn-outline-primary" href="about.php#about-details" role="button">Know More</a>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Nature Of Business</h5>
+              <p class="card-text">Wholesale Traders</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Total Number Of Employees</h5>
+                <p class="card-text">26 To 50 People</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-building-o" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Year Of Estabilishment</h5>
+              <p class="card-text">2012</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-gavel" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Legal Status Of Firm</h5>
+              <p class="card-text">Individual Proprietor</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">Annual Turnover</h5>
+                <p class="card-text">Rs. 25 to 50 Crore</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="" style="text-align: center;">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <div class="card-body">
+              <h5 class="card-title">GST No.</h5>
+              <p class="card-text">27CIEPS5499B3ZT</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+          <a class="btn btn-outline-primary" style="border:0" href="about.php#about-details" role="button">Know More</a>
       </div>
     </section>
     <!-- End About Section -->

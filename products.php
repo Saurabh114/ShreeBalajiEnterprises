@@ -52,13 +52,6 @@ require 'Admin/config.php';
     <?php include("includes/header.php") ?>
 
 
-
-<!--=========== Header ============-->
-    <?php include("includes/header.php") ?>
-
-
-
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio" style="padding-top:150px;">
       <div class="container" data-aos="fade-up">
