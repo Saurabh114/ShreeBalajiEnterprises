@@ -5,6 +5,15 @@
     $row=mysqli_fetch_assoc($q);
 ?>
 
+<?php
+   
+    if(!isset($_SESSION['admin_id'])){
+      header('location:./login.php');
+    }
+    $select_admin="select * from contact order by time DESC";
+    $select_admin=mysqli_query($con,$select_admin);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -144,45 +153,51 @@
          </div>
        </div>
        </div>
-       <div class="row">
-         <div class="col-lg-12">
-           <section class="panel">
-             <header class="panel-heading">
-               Contact Requests
-             </header>
+       
+        <div class="row">
+          <div class="col-lg-12">
+            <section class="panel">
+              <header class="panel-heading">
+                Contact Requests
+              </header>
 
-             <table class="table table-striped table-advance table-hover">
-               <tbody>
-                 <tr>
-                   <th><i class="icon_profile"></i> Full Name</th>
-                   <th><i class="icon_mail_alt"></i> Email</th>
-                   <th><i class="icon_pencil"></i> Subject</th>
-                   <th><i class="icon_mail"></i> Message</th>
-                   <th><i class="icon_clock"></i> Time</th>
-                   <th><i class="icon_cogs"></i> Remove</th>
-                 </tr>
-
-                   <tbody>
-                   <tr>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td>
-                     <div class="btn-group">
-                       <a class="btn btn-danger" href="delete-contact.php?id="><i class="icon_close_alt2"></i></a>
-                     </div>
-                   </td>
-                   </tr>
-
-
-               </tbody>
-             </table>
-           </section>
-         </div>
-       </div>
-
+              <table class="table table-striped table-advance table-hover">
+                <tbody>
+                  <tr>
+                    <th><i class="icon_profile"></i> Full Name</th>
+                    <th><i class="icon_mail_alt"></i> Email</th>
+                    <th><i class="icon_pencil"></i> Subject</th>
+                    <th><i class="icon_mail"></i> Message</th>
+                    <th><i class="icon_clock"></i> Time</th>
+                    <th><i class="icon_cogs"></i> Remove</th>
+                  </tr>
+                  <?php 
+                                    $counter=1;
+                                    while($row= mysqli_fetch_array($select_admin)){
+                                ?>
+                    <tbody>
+                    <tr>
+                    <td><?php echo $row['name']?></td>
+                    <td><?php echo $row['email']?></td>
+                    <td><?php echo $row['subject']?></td>
+                    <td><?php echo $row['message']?></td>
+                    <td><?php echo $row['time']?></td>
+                    <td>
+                      <div class="btn-group">
+                        <a class="btn btn-danger" href="delete-contact.php?id=<?php echo $row['cid'];?>"><i class="icon_close_alt2"></i></a>
+                      </div>
+                    </td>
+                    </tr>
+                                <?php 
+                                    $counter++;
+                                    }
+                                ?>
+                  
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
 
 
  <!--main content end-->
