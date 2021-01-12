@@ -1,17 +1,23 @@
 <?php
+
+
     require 'config.php';
     $query="select * from admin";
     $q=mysqli_query($con,$query);
-    $row=mysqli_fetch_assoc($q);
-?>
-
-<?php
    
-    if(!isset($_SESSION['admin_id'])){
+ $count=mysqli_num_rows($q);
+
+   if(!isset($_SESSION['admin_id'])){
       header('location:./login.php');
     }
-    $select_admin="select * from contact order by time DESC";
-    $select_admin=mysqli_query($con,$select_admin);
+    
+    $blog_query=mysqli_query($con,"select * from blog");
+    $bcount=mysqli_num_rows($blog_query);
+
+    $contact_query=mysqli_query($con,"select * from contact order by time DESC");
+
+    $product_query=mysqli_query($con,"select * from products");
+    $pcount=mysqli_num_rows($product_query);
 ?>
 
 <!DOCTYPE html>
@@ -76,7 +82,7 @@
        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
          <div class="info-box blue-bg">
            <i class="fa fa-cloud-download"></i>
-           <div class="count"></div>
+           <div class="count"><?php echo $bcount ?></div>
            <div class="title">Blogs</div>
          </div>
          <!--/.info-box-->
@@ -86,7 +92,7 @@
        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
          <div class="info-box brown-bg">
            <i class="fa fa-user"></i>
-           <div class="count">1</div>
+           <div class="count"><?php echo $count ?></div>
            <div class="title">Admins</div>
          </div>
          <!--/.info-box-->
@@ -96,7 +102,7 @@
        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
          <div class="info-box dark-bg">
            <i class="fa fa-thumbs-o-up"></i>
-           <div class="count">36</div>
+           <div class="count"><?php echo $pcount ?></div>
            <div class="title">Products</div>
          </div>
          <!--/.info-box-->
@@ -139,12 +145,17 @@
                  </tr>
                </thead>
                <tbody>
-
+<?php
+            while($row=mysqli_fetch_array($q)){
+?>
                  <tr>
-                  <td>1</td>
+                  <td><?php echo $row['aid'] ?></td>
+                  
                    <td><?php echo $row['admin_name'] ?></td>
                    <td><?php echo $row['email_id'] ?></td>
+               
                  </tr>
+                   <?php } ?>
 
                </tbody>
              </table>
@@ -173,7 +184,7 @@
                   </tr>
                   <?php 
                                     $counter=1;
-                                    while($row= mysqli_fetch_array($select_admin)){
+                                    while($row= mysqli_fetch_array($contact_query)){
                                 ?>
                     <tbody>
                     <tr>
