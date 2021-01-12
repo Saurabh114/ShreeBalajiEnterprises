@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'Admin/config.php';
     $query="select * from products";
     $display_product=mysqli_query($con,$query);
@@ -45,23 +45,12 @@ require 'Admin/config.php';
 </head>
 
 <body>
-  <style type="text/css">
-.zoom {
-  padding: 50px;
-  background-color: transparent;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-}
 
-.zoom:hover {
-  transform: scale(1.8); 
-}
-</style>
 <!--=========== Header ============-->
     <?php include("includes/header.php") ?>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <!-- <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1 style="color:#fff;">Shree Balaji <span>Enterprises </span> </h1>
       <h2 style="color:#fff;"> Wholesale Trader of Submersible Wire &amp; Copper Winding Wire from Pune</h2>
@@ -70,9 +59,61 @@ require 'Admin/config.php';
         <a href="" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"><b style="color:#fff">Corporate Video</b> <i class="icofont-play-alt-2"></i></a>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section> -->
+  <!-- End Hero -->
 <!-- https://www.youtube.com/watch?v=zwv3_mC4XNs&feature=emb_logo -->
 
+<div class="main-text">
+<section id="" class="d-flex align-items-center hero">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100" style="padding-top: 50px;">
+      <h1 style="color:#fff; padding-top:50px;">Shree Balaji <span>Enterprises </span> </h1>
+      <h2 style="color:#fff;"> Wholesale Trader of Submersible Wire &amp; Copper Winding Wire from Pune</h2>
+      <div class="d-flex">
+        <a href="products.php#portfolio" class="btn-get-started scrollto">Our Products</a>
+        <a href="" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"><b style="color:#fff">Corporate Video</b> <i class="icofont-play-alt-2"></i></a>
+      </div>
+    </div>
+  </section>
+</div>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/courosel-img-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/courosel-img-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/courosel-img-3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<!-- end corosel -->
 
 
 
@@ -84,7 +125,7 @@ require 'Admin/config.php';
     <h5 > <b>Shree Balaji Enterprises </b>is a dependable name in the market as wholesaler and trader of Automobile Products, established in 2012. </h5>
       <hr>
     </div>
-    
+
       <div class="carousel-wrapper">
         <div class="carousel" data-flickity='{ "autoPlay": true }' data-aos="zoom-in" data-aos-delay="10">
           <?php
@@ -99,6 +140,11 @@ require 'Admin/config.php';
         </div>
       </div>
     </section>
+
+
+
+
+
 
 
     <!-- ======= About Section ======= -->

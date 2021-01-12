@@ -1,11 +1,46 @@
-
+/**
+* Template Name: BizLand - v2.0.3
+* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "serif !important";
+  /* font-family: "Open Sans", sans-serif; */
   /* color: #444444; */
+}
+.main-text {
+  position: absolute;
+  top: 90px;
+  color: white;
+  z-index: 111;
+    height: 510px;
+    width: 100%;
+    backdrop-filter: brightness(0.5);
+}
+.about-us i{
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);
+  font-size: 24px;
+  padding: 30px;
+  margin-right: 15px;
+  color: #106eea;
+  border-radius: 50px;
+}
+.about-us .card{
+  border-radius: 34px 0 34px 0;
+    box-shadow: 10px 10px 10px #d0cece;
+}
+.about-us .g-0{
+  border: none;
+}
+#carouselExampleCaptions div img{
+  height: 600px;
+
 }
 
 a {
@@ -19,7 +54,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "serif";
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -74,12 +109,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+  .g-0{
+    text-align: center;
   }
 }
 
@@ -134,20 +174,16 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  background: #fff;
-  padding: 20px 0 0;
+  padding: 15px 0 15px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#header .fixed-top{
-  background: none;
 }
 
 #header.header-scrolled {
   top: 0;
-  padding: 15px  15px 0 15px;
+  padding: 15px;
 }
 
 
@@ -421,23 +457,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../images/bg/bg-img.jpg") center top no-repeat;
+  background: url("../images/bg/bg-img.jpg") top left;
   background-size: cover;
   position: relative;
 }
-
-/* #hero::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 95%;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
-  z-index: 0;
-  border-radius: 0 0 -50% -50%;
-  transform: translateX(-50%) rotate(0deg);
-} */
 
 #hero:before {
   content: "";
@@ -460,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#hero h1 {
+#hero h1,.hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
@@ -469,7 +492,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero .container h1 {
+#hero .container h1,.hero .container h1 {
   margin: 0;
   font-size: 38px;
   font-weight: 700;
@@ -477,31 +500,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   font-family: "Poppins", sans-serif;
 }
-#hero h1 span {
+#hero h1 span,.hero h1 span {
   color: #106eea;
 }
 
-#hero h2 {
+#hero h2,.hero h2 {
   color: #555555;
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
 }
 
-#hero .container h2 {
+#hero .container h2,.hero .container h2 {
   color: #555555;
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
 }
 
-#hero .container h2 span {
+#hero .container h2 span,.hero .container h2 span {
   /* color: #106eea; */
   font-size: 28px;
   padding-left: 80px;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started,.hero .btn-get-started {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -515,11 +538,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #106eea;
 }
 
-#hero .btn-get-started:hover {
+#hero .btn-get-started:hover,.hero .btn-get-started:hover {
   background: #247cf0;
 }
 
-#hero .btn-watch-video {
+#hero .btn-watch-video,.hero .btn-watch-video {
   font-size: 16px;
   display: inline-block;
   padding: 10px 25px 8px 40px;
@@ -530,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-#hero .btn-watch-video i {
+#hero .btn-watch-video i,.hero .btn-watch-video i {
   color: #106eea;
   font-size: 32px;
   position: absolute;
@@ -539,11 +562,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#hero .btn-watch-video:hover {
+#hero .btn-watch-video:hover,.hero .btn-watch-video:hover {
   color: #106eea;
 }
 
-#hero .btn-watch-video:hover i {
+#hero .btn-watch-video:hover i,.hero .btn-watch-video:hover i {
   color: #3b8af2;
 }
 
@@ -795,14 +818,15 @@ section {
   margin-top: 35px;
 }
 
-.about .content ul i {
+.about .content ul i,#about i {
   background: #fff;
-  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 5.12);
   font-size: 24px;
-  padding: 20px;
+  padding: 25px;
   margin-right: 15px;
   color: #106eea;
   border-radius: 50px;
+  align-self: center;
 }
 
 .about .content ul h5 {
@@ -1071,7 +1095,6 @@ background-color: #f6f9fe;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
 }
-
 
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
