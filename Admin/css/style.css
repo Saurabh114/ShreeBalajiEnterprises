@@ -132,7 +132,7 @@ table tr th { color: #688a7e;}
 
 
 
-..login-body {
+.login-body {
 
     background-color: #f1f2f7;
 
@@ -167,8 +167,8 @@ table tr th { color: #688a7e;}
 }
 
 .login-img3-body{
-    background-image: linear-gradient(to left, #e1f0fa, #3498db);
-  /*background: url('../img/bg-1.jpg') no-repeat center center fixed;*/
+
+  background: url('../img/bg-1.jpg') no-repeat center center fixed;
 
   -webkit-background-size: cover;
 
@@ -501,7 +501,6 @@ table tr th { color: #688a7e;}
     font-size: 30px;
 
 }
-
 
 
 
