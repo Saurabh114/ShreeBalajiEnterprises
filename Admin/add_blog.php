@@ -1,4 +1,9 @@
-
+<?php
+    require 'config.php';
+    if(!isset($_SESSION['admin_id'])){
+      header('location:./login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,11 +41,11 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-files-o"></i> Add New Product</h3>
+            <h3 class="page-header"><i class="fa fa-files-o"></i> Add New Blog</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-              <li><i class="icon_document_alt"></i>Products</li>
-              <li><i class="fa fa-files-o"></i>Add Product</li>
+              <li><i class="icon_document_alt"></i>Blogs</li>
+              <li><i class="fa fa-files-o"></i>Add Blog</li>
             </ol>
           </div>
         </div>
@@ -49,28 +54,33 @@
           <div class="col-lg-12">
             <section class="panel">
               <header class="panel-heading">
-                Add New Product
+                Blog Details
               </header>
               <div class="panel-body">
                 <div class="form">
-                  <form class="form-validate form-horizontal" id="feedback_form" method="POST" action='add_product_script.php' enctype="multipart/form-data">
+                  <form class="form-validate form-horizontal" id="feedback_form" method="post" action='add_blog_script.php' enctype="multipart/form-data">
                     <div class="form-group ">
-                      <label for="cname" class="control-label col-lg-2"> Product Name<span class="required">*</span></label>
+                      <label for="cname" class="control-label col-lg-2"> Blog Title<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="cname" name="pname" minlength="5" type="text" required />
+                        <input class="form-control" id="cname" name="title" minlength="5" type="text" required />
                       </div>
                     </div>
-                    
                     <div class="form-group ">
-                      <label for="curl" class="control-label col-lg-2">Product Description</label>
+                      <label for="cemail" class="control-label col-lg-2"> Blog Summary <span class="required">*</span></label>
                       <div class="col-lg-10">
-                          <textarea class="form-control ckeditor" name="pdes" rows="6"></textarea>
+                        <input class="form-control " id="cemail" type="text" name="summary" required />
+                      </div>
+                    </div>
+                    <div class="form-group ">
+                      <label for="curl" class="control-label col-lg-2">Blog Description</label>
+                      <div class="col-lg-10">
+                          <textarea class="form-control ckeditor" name="blog" rows="6"></textarea>
                       </div>
                     </div>
                     <div class="form-group  ">
-                      <label for="image" class="control-label col-lg-2">Product Image</label>
+                      <label for="image" class="control-label col-lg-2">Blog Image</label>
                       <div class="col-lg-10">
-                        <input class="form-control" id="image"  type="file" name="image" accept="image/*"  required/>
+                        <input class="form-control" id="image" type="file" name="image" accept="image/*"  required/>
                       </div>
                     </div>
                     <div class="form-group">
