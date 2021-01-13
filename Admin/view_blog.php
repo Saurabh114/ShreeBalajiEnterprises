@@ -84,7 +84,7 @@
                         <p><strong><?php echo $blog['blog_title'];?></strong><br><small><?php echo $blog['blog_date'];?></small><br><br><?php echo $blog['blog_summary'];?></p>
                     </div>
                     <div class="col-md-6">
-                        <img src="<?php echo $blog['blog_image'];?>">
+                        <img width="300" src="<?php echo $blog['blog_image'];?>">
                     </div>
                 </div>
                 <p><?php echo $blog['blog_content'];?></p>

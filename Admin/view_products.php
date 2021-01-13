@@ -83,8 +83,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h4><strong>Product Name:  </strong> <?php echo $row['pname'];?><br><br>
+                          <strong>Category: </strong><?php echo $row['pcategory'];?><br><br>
                           <strong>Description: </strong><?php echo $row['pdes'];?><br><br>
-                          <strong>Category: </strong><?php echo $row['pcategory'];?></h4><br>
+                          <strong>Price: </strong><?php echo $row['price'];?><br><br></h4>
+                          
                     </div>
                     <div class="col-md-6">
                         <img style="width: 150px;" src="<?php echo $row['pimage'];?>">
