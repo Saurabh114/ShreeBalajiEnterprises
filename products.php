@@ -1,4 +1,4 @@
-<?php
+<?php 
 require 'Admin/config.php';
     $query="select * from products";
     $display_product=mysqli_query($con,$query);
@@ -47,7 +47,42 @@ require 'Admin/config.php';
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
 
+ <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+ 
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+</style>
+<!--=========== Header ============-->
+    <?php include("includes/header.php") ?>
+
+>>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214
+
+ <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+ 
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+</style>
 <!--=========== Header ============-->
     <?php include("includes/header.php") ?>
 
@@ -135,7 +170,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio" style="padding-top:150px;">
       <div class="container" data-aos="fade-up">
@@ -175,25 +209,12 @@ for (var i = 0; i < btns.length; i++) {
 ?>
           <div class="col-lg-4 col-md-6 portfolio-item filterDiv <?php echo $row['pcategory'] ?>">
 
-<<<<<<< Updated upstream
-
-            <div class="portfolio-info filterDiv <?php echo $row['pcategory'] ?>">
-=======
             <div class="portfolio-info ">
->>>>>>> Stashed changes
               
               <img src="Admin/<?php echo $row['pimage'];?>" class="zoom " alt="">
               <h4><?php echo $row['pname'] ?></h4>
               <p><?php echo $row['price'] ?></p>
             
-
-            <div class="portfolio-info">
-
-              <img src="Admin/<?php echo $row['pimage'];?>" class="zoom img-fluid" alt="">
-              <h4><?php echo $row['pname'] ?></h4>
-              <p><?php echo $row['pdes'] ?></p>
-
-
             <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#vagale">
               <p style="color: #0e49b5;">Click to know More </p>
             </a>

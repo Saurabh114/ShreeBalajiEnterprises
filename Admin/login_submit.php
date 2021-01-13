@@ -1,7 +1,7 @@
 <?php
     require 'config.php';
     $email= mysqli_real_escape_string($con, strip_tags($_POST['email']));
-    $password= mysqli_real_escape_string($con, $_POST['password']);
+    $password= mysqli_real_escape_string($conn, $_POST['password']);
     //$password=$_POST['password'];
     $select_query="select * from `admin` where `email_id` like '$email'";
     $select_query_result= mysqli_query($con, $select_query) or die(mysqli_error($con));
