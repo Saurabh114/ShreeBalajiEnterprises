@@ -8,10 +8,10 @@ require 'config.php';
         
         $q = "INSERT INTO contact(name,email,subject,message) VALUES ('$name','$email','$subject','$message')";
         if(mysqli_query($con, $q)){
-                echo "<script>alert('Message Sent Successfully'); window.location.href='./index.php';</script>";
+                echo "<script>alert('Message Sent Successfully'); window.location.href='../index.php';</script>";
         }
         else{
-            echo "<script>alert('Message NOT Sent, Try again!'); window.location.href='./index.php';</script>";
+            echo "<script>alert('Message NOT Sent, Try again!'); window.location.href='../index.php';</script>";
         }
     }
 ?>

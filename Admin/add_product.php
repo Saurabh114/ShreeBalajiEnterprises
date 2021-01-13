@@ -77,13 +77,13 @@
                        
                       </div>
                     </div>
-                    
                     <div class="form-group ">
-                      <label for="cname" class="control-label col-lg-2"> Product Description<span class="required">*</span></label>
+                      <label for="curl" class="control-label col-lg-2">ProductDescription</label>
                       <div class="col-lg-10">
-                        <textarea class="form-control" id="cname" name="pdes"  type="text" required></textarea>  
+                          <textarea class="form-control ckeditor" id="pdes" name="pdes" rows="6"></textarea>
                       </div>
                     </div>
+                    
                     <div class="form-group  ">
                       <label for="image" class="control-label col-lg-2">Product Image</label>
                       <div class="col-lg-10">

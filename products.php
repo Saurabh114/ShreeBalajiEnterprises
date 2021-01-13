@@ -69,7 +69,7 @@ require 'Admin/config.php';
                  <h4>
                  <li data-filter="*" class="filter-active">All</li>
                  <li id="wire" data-filter=".filter-wire">Wires</li>
-                 <li id="cooper-wire" data-filter="filter-copperwire">Copper Wires</li>
+                 <li id="cooper-wire" data-filter=".filter-copperwire">Copper Wires</li>
                  <li id="cables" data-filter=".filter-cable">Cables</li>
                  <li id="varnish" data-filter=".filter-varnish">Varnish</li>
                  <li id="bearing" data-filter=".filter-bearing">Ball Bearing</li>
@@ -87,7 +87,7 @@ require 'Admin/config.php';
 <?php
             while($row=mysqli_fetch_array($display_product)){
 ?>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wire">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
 
             <div class="portfolio-info">
 
