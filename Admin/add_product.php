@@ -78,6 +78,12 @@
                       </div>
                     </div>
                     <div class="form-group ">
+                      <label for="cname" class="control-label col-lg-2"> Product Price<span class="required">*</span></label>
+                      <div class="col-lg-10">
+                        <input class="form-control" id="price" name="price"  type="text" required />
+                      </div>
+                    </div>
+                    <div class="form-group ">
                       <label for="curl" class="control-label col-lg-2">ProductDescription</label>
                       <div class="col-lg-10">
                           <textarea class="form-control ckeditor" id="pdes" name="pdes" rows="6"></textarea>
