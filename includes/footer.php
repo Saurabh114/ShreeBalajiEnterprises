@@ -42,8 +42,12 @@
         <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.500219355077!2d73.9236586147045!3d18.506284087417296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1338f6b8ba3%3A0xcc064fe9a3fcf92f!2sShree%20Balaji%20Enterprises!5e0!3m2!1sen!2sin!4v1609662230207!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
       </div>
 
+
+
+
+
       <div class="col-lg-6">
-        <form action="Admin/contact_script.php" method="POST" role="form" class="php-email-form">
+        <form action="./Admin/contact_script.php" method="POST"  >
           <div class="row">
             <div class="col form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -62,12 +66,8 @@
             <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button  class="btn btn-outline-primary"type="submit">Send Message</button></div>
+          
+          <div class="text-center"><button   class="btn btn-outline-primary" name="submit" type="submit">Send Message</button></div>
         </form>
       </div>
 

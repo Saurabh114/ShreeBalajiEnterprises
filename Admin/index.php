@@ -15,9 +15,13 @@
     $bcount=mysqli_num_rows($blog_query);
 
     $contact_query=mysqli_query($con,"select * from contact order by time DESC");
+    $ccount=mysqli_num_rows($contact_query);
 
     $product_query=mysqli_query($con,"select * from products");
     $pcount=mysqli_num_rows($product_query);
+
+
+    
 ?>
 
 <!DOCTYPE html>
@@ -112,8 +116,8 @@
        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
          <div class="info-box green-bg">
            <i class="fa fa-cubes"></i>
-           <div class="count visitor">0</div>
-           <div class="title">Visitors</div>
+           <div class="count visitor"><?php echo $ccount ?></div>
+           <div class="title">Contact Requests</div>
          </div>
          <!--/.info-box-->
        </div>
