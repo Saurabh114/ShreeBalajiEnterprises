@@ -1894,3 +1894,20 @@ align-items: center;
   23%  {background-color: #a3d2ca;}
   25% {background-color: #a7c5eb}
 }
+
+
+
+/*============= Blog =============*/
+
+#blog-img{
+  width: 100%;
+  height: auto;
+}
+
+#blog .row-content{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color:#f6f9fe;
+   animation-name: example3;
+   animation-duration: 4s;
+   animation-iteration-count: 500;
+}

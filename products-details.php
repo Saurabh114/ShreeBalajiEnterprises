@@ -51,7 +51,7 @@ require 'Admin/config.php';
 
 
     <!-- ======= blog oopening Section ======= -->
-    <section id="about" class="about" style="padding-top: 100px;">
+    <section id="blog" class="blog" style="padding-top: 100px;">
       <div class="container">
         <?php
             while($row=mysqli_fetch_array($display_product)){
@@ -60,26 +60,61 @@ require 'Admin/config.php';
           <h3><?php echo $row['pname'] ?></h3>
         </div>
         <div class="row content">
-
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                  <img class="img-fluid d-block w-100" src="admin/<?php echo $row['pimage'];?>" alt="First slide">
-                </div>
-
-              </div>
-            </div>.
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+            <div id="blog-img" class="blog-img">
+              <img class="" src="admin/<?php echo $row['pimage'];?>" alt="First slide">
+            </div>
           </div>
-          <div class="col-lg-6 pt-lg-2" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6 order-2 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="150">
               <p><?php echo $row['pdes'] ?></p>
-
             <h6><b>To Buy Products  <a href="#contact">Click Me</b></a></h6>
             <p>
               <br>
-
-                 <?php ?>
+              <table class="table table-bordered">
+                <thead>
+                  <h5>Product Details:</h5>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Minimum Order Quentity</th>
+                    <td>200 Kilogram</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Product Type</th>
+                    <td>Submersible winding copper wire</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Conductor Type</th>
+                    <td>	Solid</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Insulation</th>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Wire Type</th>
+                    <td>Submersible</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Condition</th>
+                    <td>	New</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Swg</th>
+                    <td>	.5 to 2.2</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Diameter</th>
+                    <td>	3-5 mm, 0.02 - 1 mm, 1-3 mm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Material</th>
+                    <td>	Copper</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6>  We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
+                 Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h6>
 
             </p>
         </div>
@@ -90,22 +125,6 @@ require 'Admin/config.php';
 
     <!-- End blog opening Section -->
 
-    <section id="sme-ipo" class="sme-ipo pt-0 pb-0">
-  <div class="container">
-
-    <!--<div class="section-title" data-aos="fade-up">-->
-      <!--<h2><img src="assets/img/smeipo-01.png" class="img-fluid"></h2>-->
-    <!--</div>-->
-    <div>
-
-      <div data-aos="fade-up" class="col-md-12 mb-2 p-3" style="background-color:#e1f0fa; text-color:white">
-        <p>
-         <?php echo $blog['product_description'];?>
-        </p>
-      </div>
-    </div>
-   </div>
- </section>
 
 
 
