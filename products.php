@@ -55,12 +55,12 @@ require 'Admin/config.php';
 <style>
 .filterDiv {
  
-float: left;
+ float: left;
   display: none;
 }
 
 .show {
-  display: block;
+  display: inline-block; ;
 }
 
 
@@ -70,7 +70,7 @@ float: left;
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+
   cursor: pointer;
 }
 
@@ -78,10 +78,7 @@ float: left;
   background-color: #ddd;
 }
 
-.btn.active {
-  background-color: #3498db;
-  color: white;
-}
+
 </style>
 
 
@@ -90,7 +87,9 @@ float: left;
 
 
 <script>
-filterSelection("all")
+window.onload = function(){
+filterSelection("all");
+};
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -153,7 +152,7 @@ for (var i = 0; i < btns.length; i++) {
                <ul id="portfolio-flters">
                 <div id="myBtnContainer"  >
                  <h4 >
-              <li class="btn active" onclick="filterSelection('all')" >All</li>   
+              <li class="btn filter-active"  onclick="filterSelection('all')" >All</li>   
               <li class="btn" onclick="filterSelection('Wires')" >Wires</li>
               <li class="btn" onclick="filterSelection('Copper Wires')" >Copper Wires</li>
               <li class="btn" onclick="filterSelection('Cables')" >Cables</li>
@@ -174,12 +173,16 @@ for (var i = 0; i < btns.length; i++) {
 <?php
             while($row=mysqli_fetch_array($display_product)){
 ?>
-          <div style="overflow: hidden;" class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div class="col-lg-4 col-md-6 portfolio-item filterDiv <?php echo $row['pcategory'] ?>">
 
+<<<<<<< Updated upstream
 
             <div class="portfolio-info filterDiv <?php echo $row['pcategory'] ?>">
+=======
+            <div class="portfolio-info ">
+>>>>>>> Stashed changes
               
-              <img src="Admin/<?php echo $row['pimage'];?>" class="zoom img-fluid" alt="">
+              <img src="Admin/<?php echo $row['pimage'];?>" class="zoom " alt="">
               <h4><?php echo $row['pname'] ?></h4>
               <p><?php echo $row['price'] ?></p>
             
