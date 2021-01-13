@@ -87,6 +87,88 @@ require 'Admin/config.php';
     <?php include("includes/header.php") ?>
 
 
+<style>
+.filterDiv {
+ 
+float: left;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #3498db;
+  color: white;
+}
+</style>
+
+
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 
 
     <!-- ======= Portfolio Section ======= -->
@@ -103,34 +185,36 @@ require 'Admin/config.php';
            <div id="product-filter" class="row" data-aos="fade-up" data-aos-delay="100">
              <div class="col-lg-12 d-flex justify-content-center">
                <ul id="portfolio-flters">
-                 <h4>
-                 <li data-filter="*" class="filter-active">All</li>
-                 <li id="wire" data-filter=".filter-wire">Wires</li>
-                 <li id="cooper-wire" data-filter=".filter-copperwire">Copper Wires</li>
-                 <li id="cables" data-filter=".filter-cable">Cables</li>
-                 <li id="varnish" data-filter=".filter-varnish">Varnish</li>
-                 <li id="bearing" data-filter=".filter-bearing">Ball Bearing</li>
-                 <li id="grease" data-filter=".filter-grease">SKF Grease</li>
-                 <li id="subpaper" data-filter=".filter-paper">Submersible Paper</li>
-                 <li id="rubbertube" data-filter=".filter-tube">Omega Rubber Tube</li>
-                 <li id="gsleeves" data-filter=".filter-sleeves">Fiber Glass Sleeves</li>
+                <div id="myBtnContainer"  >
+                 <h4 >
+              <li class="btn active" onclick="filterSelection('all')" >All</li>   
+              <li class="btn" onclick="filterSelection('Wires')" >Wires</li>
+              <li class="btn" onclick="filterSelection('Copper Wires')" >Copper Wires</li>
+              <li class="btn" onclick="filterSelection('Cables')" >Cables</li>
+              <li class="btn" onclick="filterSelection('Varnish')" >Varnish</li>
+              <li class="btn" onclick="filterSelection('Ball Bearing')"  >Ball Bearing</li>
+              <li class="btn" onclick="filterSelection('SKF Grease')" >SKF Grease</li>
+              <li class="btn" onclick="filterSelection('Submersible Paper')"  >Submersible Paper</li>
+              <li class="btn" onclick="filterSelection('Omega Rubber Tube')"  >Omega Rubber Tube</li>
+              <li class="btn" onclick="filterSelection('Fiber Glass Sleeves')" >Fiber Glass Sleeves</li>
                </h4>
+               </div>
                </ul>
              </div>
            </div>
 
 
-        <div id="vagalesub" class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div  id="vagalesub" class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 <?php
             while($row=mysqli_fetch_array($display_product)){
 ?>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div style="overflow: hidden;" class="col-lg-4 col-md-6 portfolio-item filter-cable">
 
-            <div class="portfolio-info">
+            <div class="portfolio-info filterDiv <?php echo $row['pcategory'] ?>">
               
               <img src="Admin/<?php echo $row['pimage'];?>" class="zoom img-fluid" alt="">
               <h4><?php echo $row['pname'] ?></h4>
-              <p><?php echo $row['pdes'] ?></p>
+              <p><?php echo $row['price'] ?></p>
             
             <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#vagale">
               <p style="color: #0e49b5;">Click to know More </p>
@@ -163,6 +247,9 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+
+
+
 
 <!--Model Popo-up-->
 
