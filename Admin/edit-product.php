@@ -7,8 +7,10 @@ $id = $_GET['bid'];
     if (count($record) == 1 ) {
       $row = mysqli_fetch_array($record);
       $pname = $row['pname'];
+      $cat = $row['pcategory'];
       $pdes = $row['pdes'];
       $img = $row['pimage'];
+      $price = $row['price'];
     }
 ?>
 <!DOCTYPE html>
@@ -75,7 +77,8 @@ $id = $_GET['bid'];
                     <div class="form-group ">
                       <label for="pcat" class="control-label col-lg-2"> Product Category<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <select id="pcat" name="pcat">
+                        <select  id="pcat" name="pcat">
+                           <option><?php echo $cat ?></option>
                            <option>Wires</option>
                            <option>Copper Wires</option>
                            <option>Cables</option>
@@ -89,11 +92,16 @@ $id = $_GET['bid'];
                        
                       </div>
                     </div>
-                    
                     <div class="form-group ">
-                      <label for="cname" class="control-label col-lg-2"> Product Description<span class="required">*</span></label>
+                      <label for="cname" class="control-label col-lg-2"> Product Price<span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <textarea class="form-control" id="cdes" name="pdes"  type="text" required><?php echo $pdes?></textarea>  
+                        <input class="form-control" id="price" value="<?php echo $price ?>" name="price"  type="text" required />
+                      </div>
+                    </div>
+                     <div class="form-group ">
+                      <label for="curl" class="control-label col-lg-2">Product Description</label>
+                      <div class="col-lg-10">
+                          <textarea class="form-control ckeditor" id="pdes"  name="pdes" rows="6"><?php echo $pdes ?></textarea>
                       </div>
                     </div>
                     
@@ -146,10 +154,12 @@ $id = $_GET['bid'];
 if (isset($_POST['submit'])) {
 
    $pname =  $_POST['pname'];
+   $price = $_POST['price'];
+
      $pdes = $_POST['pdes'];
      $pcat = $_POST['pcat'];
    
-            $q=mysqli_query($con, "UPDATE products SET pname='$pname', pdes='$pdes', pcategory='$pcat' WHERE id=$id");
+            $q=mysqli_query($con, "UPDATE products SET pname='$pname', price='$price', pdes='$pdes', pcategory='$pcat' WHERE id=$id");
             
             if( $q){
                 echo "<script>alert('Product Updated Successfully'); window.location.href='view_products.php'</script>";

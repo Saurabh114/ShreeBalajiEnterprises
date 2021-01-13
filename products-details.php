@@ -1,3 +1,12 @@
+<?php
+require 'Admin/config.php';
+    $query="select * from products";
+    $display_product=mysqli_query($con,$query);
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,59 +50,33 @@
 
 
 
-              <!-- ======= blog oopening Section ======= -->
-              <section id="about" class="about" style="padding-top: 100px;">
-                <div class="container">
+    <!-- ======= blog oopening Section ======= -->
+    <section id="blog" class="blog" style="padding-top: 100px;">
+      <div class="container">
+        <?php
+            while($row=mysqli_fetch_array($display_product)){
+        ?>
+        <div class="section-title">
+          <h3 align="left"><?php echo $row['pname'] ?></h3>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+            <div id="blog-img" class="blog-img">
+              <img class="" src="admin/<?php echo $row['pimage'];?>" alt="First slide">
+            </div>
+          </div>
+          <div class="col-lg-6 order-2 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="150">
+              <p><?php echo $row['pdes'] ?></p>
+            <h6><b>To Buy Products  <a href="#contact">Click Me</b></a></h6>
+            
+        </div>
+      </div>
+      <br>
+    <?php } ?>
+      </div>
+    </section>
 
-                  <div class="section-title">
-                    <h3>Check our <span>Products</span></h3>
-                  </div>
-                  <div class="row content">
-
-                    <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-
-                          <div class="carousel-item active">
-                            <img class="img-fluid d-block w-100" src="admin/<?php echo $blog['blog_image'];?>" alt="First slide">
-                          </div>
-
-                        </div>
-                      </div>.
-                    </div>
-                    <div class="col-lg-6 pt-lg-2" data-aos="fade-up" data-aos-delay="150">
-                        <h4><strong><?php echo $product['Product_title'];?></strong></h4>
-                      <h6>To Buy Products  <a href="#contact"><b>Click Me</b></a></h6> 
-                      <p>
-                        <br>
-                        <small><?php echo $product['Product_price'];?></small></small><br><br>
-
-                           <?php echo $product['product_summary'];?>
-
-                      </p>
-                  </div>
-                </div>
-                </div>
-              </section>
-
-              <!-- End blog opening Section -->
-
-              <section id="sme-ipo" class="sme-ipo pt-0 pb-0">
-            <div class="container">
-
-              <!--<div class="section-title" data-aos="fade-up">-->
-                <!--<h2><img src="assets/img/smeipo-01.png" class="img-fluid"></h2>-->
-              <!--</div>-->
-              <div>
-
-                <div data-aos="fade-up" class="col-md-12 mb-2 p-3" style="background-color:#e1f0fa; text-color:white">
-                  <p>
-                   <?php echo $blog['product_description'];?>
-                  </p>
-                </div>
-              </div>
-             </div>
-           </section>
+    <!-- End blog opening Section -->
 
 
 
@@ -102,27 +85,28 @@
 
 
 
-               <!--============ Footer ===============-->
 
-                 <?php include("includes/footer.php") ?>
+     <!--============ Footer ===============-->
 
-               <!-- Vendor JS Files -->
-               <script src="assets/vendor/jquery/jquery.min.js"></script>
-               <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-               <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-               <script src="assets/vendor/php-email-form/validate.js"></script>
-               <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-               <script src="assets/vendor/counterup/counterup.min.js"></script>
-               <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-               <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-               <script src="assets/vendor/venobox/venobox.min.js"></script>
-               <script src="assets/vendor/aos/aos.js"></script>
+       <?php include("includes/footer.php") ?>
 
-               <!-- Template Main JS File -->
-               <script src="assets/js/main.js"></script>
-               <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+     <!-- Vendor JS Files -->
+     <script src="assets/vendor/jquery/jquery.min.js"></script>
+     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+     <script src="assets/vendor/php-email-form/validate.js"></script>
+     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+     <script src="assets/vendor/counterup/counterup.min.js"></script>
+     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+     <script src="assets/vendor/venobox/venobox.min.js"></script>
+     <script src="assets/vendor/aos/aos.js"></script>
+
+     <!-- Template Main JS File -->
+     <script src="assets/js/main.js"></script>
+     <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
 
 
-             </body>
+   </body>
 
-             </html>
+   </html>
