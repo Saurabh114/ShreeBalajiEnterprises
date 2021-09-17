@@ -1,4 +1,4 @@
-<?php
+<?php 
 require 'Admin/config.php';
     $query="select * from products";
     $display_product=mysqli_query($con,$query);
@@ -45,12 +45,23 @@ require 'Admin/config.php';
 </head>
 
 <body>
+  <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
 
+.zoom:hover {
+  transform: scale(1.8); 
+}
+</style>
 <!--=========== Header ============-->
     <?php include("includes/header.php") ?>
 
   <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1 style="color:#fff;">Shree Balaji <span>Enterprises </span> </h1>
       <h2 style="color:#fff;"> Wholesale Trader of Submersible Wire &amp; Copper Winding Wire from Pune</h2>
@@ -59,61 +70,9 @@ require 'Admin/config.php';
         <a href="" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"><b style="color:#fff">Corporate Video</b> <i class="icofont-play-alt-2"></i></a>
       </div>
     </div>
-  </section> -->
-  <!-- End Hero -->
+  </section><!-- End Hero -->
 <!-- https://www.youtube.com/watch?v=zwv3_mC4XNs&feature=emb_logo -->
 
-<div class="main-text">
-<section id="" class="d-flex align-items-center hero">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100" style="padding-top: 50px;">
-      <h1 style="color:#fff; padding-top:50px;">Shree Balaji <span>Enterprises </span> </h1>
-      <h2 style="color:#fff;"> Wholesale Trader of Submersible Wire &amp; Copper Winding Wire from Pune</h2>
-      <div class="d-flex">
-        <a href="products.php#portfolio" class="btn-get-started scrollto">Our Products</a>
-        <a href="" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"><b style="color:#fff">Corporate Video</b> <i class="icofont-play-alt-2"></i></a>
-      </div>
-    </div>
-  </section>
-</div>
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/images/courosel-img-1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/courosel-img-2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/courosel-img-3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
-<!-- end corosel -->
 
 
 
@@ -125,7 +84,7 @@ require 'Admin/config.php';
     <h5 > <b>Shree Balaji Enterprises </b>is a dependable name in the market as wholesaler and trader of Automobile Products, established in 2012. </h5>
       <hr>
     </div>
-
+    
       <div class="carousel-wrapper">
         <div class="carousel" data-flickity='{ "autoPlay": true }' data-aos="zoom-in" data-aos-delay="10">
           <?php
@@ -142,91 +101,86 @@ require 'Admin/config.php';
     </section>
 
 
-
-
-
-
-
     <!-- ======= About Section ======= -->
-  <section id="about" class="about section-bg">
-    <div class="container" data-aos="fade-up">
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <h3 style="margin-top:40px;">About<span> Us</span></h3>
-        <br />
-        <h5>We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
-           Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h5>
+        <div class="section-title">
+          <h3 style="margin-top:40px;">About<span> Us</span></h3>
+          <br />
+          <h5>We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
+             Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h5>
 <hr>
-        </div>
+          </div>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <div class="" style="text-align: center;">
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-            <div class="card-body">
-              <h5 class="card-title">Nature Of Business</h5>
-              <p class="card-text">Wholesale Traders</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <div class="" style="text-align: center;">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <div class="card-body">
-              <h5 class="card-title">Total Number Of Employees</h5>
-                <p class="card-text">26 To 50 People</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <div class="" style="text-align: center;">
-            <i class="fa fa-building-o" aria-hidden="true"></i>
-            <div class="card-body">
-              <h5 class="card-title">Year Of Estabilishment</h5>
-              <p class="card-text">2012</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-3  pt-2 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul>
+              <li>
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <div>
+                  <h5>Nature Of Business</h5>
+                  <p>Wholesale Traders</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-gavel" aria-hidden="true"></i>
+                <div>
+                  <h5>Legal Status Of Firm</h5>
+                  <p>Individual Proprietor</p>
+                </div>
+              </li>
 
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <div class="" style="text-align: center;">
-            <i class="fa fa-gavel" aria-hidden="true"></i>
-            <div class="card-body">
-              <h5 class="card-title">Legal Status Of Firm</h5>
-              <p class="card-text">Individual Proprietor</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <div class="" style="text-align: center;">
-            <i class="fa fa-money" aria-hidden="true"></i>
-            <div class="card-body">
-              <h5 class="card-title">Annual Turnover</h5>
-                <p class="card-text">Rs. 25 to 50 Crore</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <div class="" style="text-align: center;">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            <div class="card-body">
-              <h5 class="card-title">GST No.</h5>
-              <p class="card-text">27CIEPS5499B3ZT</p>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
+            </ul>
+              </div>
+          <div class="col-lg-4 col-md-3 pt-2 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
 
-      </div>
-      <div class="row">
-          <a class="btn btn-outline-primary" style="border:0" href="about.php#about-details" role="button">Know More</a>
+            <ul>
+              <li>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <div>
+                  <h5>Total Number Of Employees</h5>
+                  <p>26 To 50 People</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-money" aria-hidden="true"></i>
+                <div>
+                  <h5>Annual Turnover</h5>
+                  <p>Rs. 25 to 50 Crore</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-3 pt-2 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul>
+              <li>
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <div>
+                  <h5>Year Of Estabilishment</h5>
+                  <p>2012</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                <div>
+                  <h5>GST No.</h5>
+                  <p>27CIEPS5499B3ZT</p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-lg-3 col-md-2" >
+          </div>
+          <div class="col-lg-3 col-md-2" >
+          </div>
+          <div class="col-lg-3 col-md-2" >
+          </div>
+          <div class="col-lg-3 col-md-2" style="padding-bottom:5px;">
+            <a class="btn btn-outline-primary" href="about.php#about-details" role="button">Know More</a>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End About Section -->

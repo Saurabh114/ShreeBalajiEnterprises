@@ -1,4 +1,4 @@
-<?php
+<?php 
 require 'Admin/config.php';
     $query="select * from products";
     $display_product=mysqli_query($con,$query);
@@ -47,7 +47,42 @@ require 'Admin/config.php';
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
 
+ <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+ 
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+</style>
+<!--=========== Header ============-->
+    <?php include("includes/header.php") ?>
+
+>>>>>>> 16eb664dbb461c11cd47a7d00af18ee64d8e1214
+
+ <style type="text/css">
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+ 
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+</style>
 <!--=========== Header ============-->
     <?php include("includes/header.php") ?>
 
@@ -55,12 +90,12 @@ require 'Admin/config.php';
 <style>
 .filterDiv {
  
-float: left;
+ float: left;
   display: none;
 }
 
 .show {
-  display: block;
+  display: inline-block; ;
 }
 
 
@@ -70,7 +105,7 @@ float: left;
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+
   cursor: pointer;
 }
 
@@ -78,10 +113,7 @@ float: left;
   background-color: #ddd;
 }
 
-.btn.active {
-  background-color: #3498db;
-  color: white;
-}
+
 </style>
 
 
@@ -90,7 +122,9 @@ float: left;
 
 
 <script>
-filterSelection("all")
+window.onload = function(){
+filterSelection("all");
+};
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -136,7 +170,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio" style="padding-top:150px;">
       <div class="container" data-aos="fade-up">
@@ -153,7 +186,7 @@ for (var i = 0; i < btns.length; i++) {
                <ul id="portfolio-flters">
                 <div id="myBtnContainer"  >
                  <h4 >
-              <li class="btn active" onclick="filterSelection('all')" >All</li>   
+              <li class="btn filter-active"  onclick="filterSelection('all')" >All</li>   
               <li class="btn" onclick="filterSelection('Wires')" >Wires</li>
               <li class="btn" onclick="filterSelection('Copper Wires')" >Copper Wires</li>
               <li class="btn" onclick="filterSelection('Cables')" >Cables</li>
@@ -174,23 +207,14 @@ for (var i = 0; i < btns.length; i++) {
 <?php
             while($row=mysqli_fetch_array($display_product)){
 ?>
-          <div style="overflow: hidden;" class="col-lg-4 col-md-6 portfolio-item filter-cable">
+          <div class="col-lg-4 col-md-6 portfolio-item filterDiv <?php echo $row['pcategory'] ?>">
 
-
-            <div class="portfolio-info filterDiv <?php echo $row['pcategory'] ?>">
+            <div class="portfolio-info ">
               
-              <img src="Admin/<?php echo $row['pimage'];?>" class="zoom img-fluid" alt="">
+              <img src="Admin/<?php echo $row['pimage'];?>" class="zoom " alt="">
               <h4><?php echo $row['pname'] ?></h4>
               <p><?php echo $row['price'] ?></p>
             
-
-            <div class="portfolio-info">
-
-              <img src="Admin/<?php echo $row['pimage'];?>" class="zoom img-fluid" alt="">
-              <h4><?php echo $row['pname'] ?></h4>
-              <p><?php echo $row['pdes'] ?></p>
-
-
             <a type="button" class="btn-get-started scrollto" data-toggle="modal" data-target="#vagale">
               <p style="color: #0e49b5;">Click to know More </p>
             </a>

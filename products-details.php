@@ -57,7 +57,7 @@ require 'Admin/config.php';
             while($row=mysqli_fetch_array($display_product)){
         ?>
         <div class="section-title">
-          <h3><?php echo $row['pname'] ?></h3>
+          <h3 align="left"><?php echo $row['pname'] ?></h3>
         </div>
         <div class="row content">
           <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
@@ -68,57 +68,10 @@ require 'Admin/config.php';
           <div class="col-lg-6 order-2 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="150">
               <p><?php echo $row['pdes'] ?></p>
             <h6><b>To Buy Products  <a href="#contact">Click Me</b></a></h6>
-            <p>
-              <br>
-              <table class="table table-bordered">
-                <thead>
-                  <h5>Product Details:</h5>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Minimum Order Quentity</th>
-                    <td>200 Kilogram</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Product Type</th>
-                    <td>Submersible winding copper wire</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Conductor Type</th>
-                    <td>	Solid</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Insulation</th>
-                    <td>Yes</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Wire Type</th>
-                    <td>Submersible</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Condition</th>
-                    <td>	New</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Swg</th>
-                    <td>	.5 to 2.2</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Diameter</th>
-                    <td>	3-5 mm, 0.02 - 1 mm, 1-3 mm</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Material</th>
-                    <td>	Copper</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h6>  We are reckoned as leading wholesaler and trader of Enameled & Submersible copper winding wire & insulating Products.
-                 Our product range is widely appreciated for its high quality, corrosion proof, smooth finish and competitive prices.</h6>
 
-            </p>
         </div>
       </div>
+      <br>
     <?php } ?>
       </div>
     </section>

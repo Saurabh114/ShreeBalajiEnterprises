@@ -50,17 +50,17 @@
         <form action="./Admin/contact_script.php" method="POST"  >
           <div class="row">
             <div class="col form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required /><br>
               <div class="validate"></div>
             </div>
             <div class="col form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
+            <div class="validate"></div><br>
           </div>
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
@@ -101,8 +101,7 @@
   <div class="container">
 <div class="container">
   <div class="copyright">
-    <span>Copyright &copy; <?php echo date("Y"); ?>. All Rights Reserved</span><br /><span>   Designed & Developed by <a href="admin/login.php"><i class="fa fa-cube" aria-hidden="true" style="color:#000;"></i></a><a href="https://www.hspmsolutions.com/" style="color:#000;font-size:15px;">
-      <b>HSPM Solutions</b></a></span>
+    <span>Copyright &copy; <?php echo date("Y"); ?>. All Rights Reserved |  Designed & Developed by <a href="https://www.hspmsolutions.com/" style="color:#000;"><b>HSPM Solutions</b></a></span>
   </div>
 </div>
 </div>
