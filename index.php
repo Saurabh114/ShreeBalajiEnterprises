@@ -93,7 +93,7 @@ require 'Admin/config.php';
           <div class="carousel-cell active">
             <h6><?php echo $row['pname'] ?></h6>
             <img class="zoom" src="Admin/<?php echo $row['pimage'];?>" alt="">
-            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php#vagalesub" role="button">Explore More</a></span>
+            <span class="more"><a class="btn btn-outline-primary btn-sm" href="products.php" role="button">Explore More</a></span>
           </div>
           <?php } ?>
         </div>

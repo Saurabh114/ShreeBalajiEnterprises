@@ -1,10 +1,10 @@
-<?php  
+<?php
 set_time_limit(0);
 include('config.php');
 
 if(isset($_POST['submit'])) {
 
-   
+
 
     $pname= mysqli_real_escape_string($con, $_POST['pname']);
     $price= mysqli_real_escape_string($con, $_POST['price']);
@@ -47,12 +47,12 @@ if(isset($_POST['submit'])) {
         $fileType = pathinfo($uploadPath, PATHINFO_EXTENSION);
         if(in_array(strtolower($fileType), $allowImageTypes)){
             $imageTemp = $_FILES['image']['tmp_name'];
-           
+
             $compressedImage = compressImage($imageTemp, $uploadPath, 50);
             if($compressedImage != NULL)
             {
             $q = "INSERT INTO products(pname,pcategory,price, pdes, pimage) VALUES ('$pname','$pcat','$price','$pdes','$compressedImage')";
-            
+
             if(mysqli_query($con, $q)){
                 echo "<script>alert('Product Added Successfully'); window.location.href='view_products.php'</script>";
             }
@@ -67,10 +67,10 @@ if(isset($_POST['submit'])) {
         }
 
 
-        
+
     }
 
-    
+
 }
 
 ?>

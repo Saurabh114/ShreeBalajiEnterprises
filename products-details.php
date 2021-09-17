@@ -68,7 +68,7 @@ require 'Admin/config.php';
           <div class="col-lg-6 order-2 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="150">
               <p><?php echo $row['pdes'] ?></p>
             <h6><b>To Buy Products  <a href="#contact">Click Me</b></a></h6>
-            
+
         </div>
       </div>
       <br>
